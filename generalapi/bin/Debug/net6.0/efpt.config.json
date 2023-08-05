@@ -1,0 +1,4123 @@
+﻿{
+   "CodeGenerationMode": 2,
+   "ContextClassName": "SISMEDICAERPContext",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": null,
+   "OutputContextPath": null,
+   "OutputPath": "Models",
+   "PreserveCasingWithRegex": true,
+   "ProjectRootNamespace": "generalapi",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 0,
+   "T4TemplatePath": null,
+   "Tables": [
+      {
+         "Name": "[dbo].[AAAGlapp_SP_DrugsDeliveryConsumerViewArticlesBorrar]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Act_Inventario]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Act_Stock]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Activar_Comandas_efectivo]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Activar_Comandas]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Actualizar_Existencia]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[acualiza_ciudades]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[AGREGAR_DEFAULT_TOTAL]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Agregar_Default]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[APP_SP_DrugsDeliveryConsumerViewHeader]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[APP_SP_DrugsDeliveryConsumerViewSave]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[borra_campo]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[borra_constraint]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[borra_importaciones]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[borra_inventario]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[busca_equivalencias_formula]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[busca_prefactura]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[calcula_puntos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[consolidado_residuos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Contabilizar_Entrada_Produccion_OT]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Correcion_Cierre_Venta]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[cuentas_pagar]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[dbo.proc_Formulas]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[detalle_herramienta_devolucion]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[detalle_herramienta]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[detalle_herramienta2]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[duplicados]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[edita_orden_contatacion]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Gaudar_Doc_NIIF]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[GetImpConsumo]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[GLAPP_SP_AUT_PAGOS_AUTORIZAR]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[GLAPP_SP_AUT_PAGOS_DET_OBTENER]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[GLAPP_SP_AUT_PAGOS_OBTENER]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[GLAPP_SP_AUTORIZAR_ORDEN]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Glapp_SP_CreateInventoryCount]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Glapp_SP_DrugsDeliveryConfirmation]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Glapp_SP_DrugsDeliveryConsumerViewArticles]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Glapp_SP_DrugsDeliveryConsumerViewHeader]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Glapp_SP_DrugsDeliveryConsumerViewSave]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Glapp_SP_DrugsDeliveryRestocks]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Glapp_SP_DrugsDeliveryRestocksArticles]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Glapp_SP_DrugsDeliveryRestockSave]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Glapp_SP_DrugsDeliveryRestocksHeader]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[GLAPP_SP_GET_ACCXC_FACTURAS_DET]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[GLAPP_SP_GET_ACCXC_FACTURAS]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[GLAPP_SP_GET_ACCXC_MAIN]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[GLAPP_SP_GET_ACCXC_X_TIPO]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[GLAPP_SP_GET_ACCXP_FACTURAS_DET]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[GLAPP_SP_GET_ACCXP_FACTURAS]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[GLAPP_SP_GET_ACCXP_MAIN]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[GLAPP_SP_GET_ACCXP_X_TIPO]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[GLAPP_SP_GET_CONS_VENTAS]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[GLAPP_SP_GET_ORDENES_AUTORIZAR]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[GLAPP_SP_GET_ORDENES_DETALLE]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[GLAPP_SP_GET_PFE]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Glapp_SP_GetInventoryCountConsolidated]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Glapp_SP_GetInventoryCountDet]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Glapp_SP_GetUserInventoryCounts]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Glapp_SP_InvCountGetArticlesByBarcode]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Glapp_SP_InvCountGetArticlesByCode]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Glapp_SP_InventoryCountDetDelete]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Glapp_SP_InventoryCountDetSave]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[GLAPP_SP_PING]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[GLAPP_SP_SALBAN_RPT_GENERAL_DET]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[GLAPP_SP_SALBAN_RPT_GENERAL]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[GLAPP_SP_SDP_GENERAR_SOLICITUD]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[GLAPP_SP_SDP_GET_CLIENTES_BY_NIT]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[GLAPP_SP_SDP_GET_PRODUCTOS]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[GLAPP_SP_SDP_GET_SERVICIOS]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[GLAPP_SP_SDP_GET_SUCURSALES_BY_CLIENTE]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[GLAPP_SP_USR_OBTENER]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Guardar_Entrada_Produccion_Detalle]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Guardar_Entrada_Produccion]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Importar_Tablas]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[impresion_manual_tarifario]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[IMPRIME_REQUISICION]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[IMPRIME_VACACIONES]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Inicializar_Tablas]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Inventario_Articulo]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[LIMPIAR_BASE]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Limpiar_Tabla_Aux]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[load_Articulos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[MOVIMIENTO_BANCOS]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Ne_CalcHorasAnt]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Ne_CalcHorasExtras]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Ne_CalcRecargos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Ne_CalcularHoras]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Ne_CalcularHoras2]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Ne_HistorialTurnos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Ne_InsertarHorariosTurnos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Ne_InsertarHorariosTurnos2]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Ne_InsertTurnoEmpleado]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Ne_ObtenerCargoPorCodigo]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Ne_ObtenerTurnoEmpleadoPorId]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Ne_ObtenerTurnosEmpleadosPorFecha]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Ne_SalidaTurnoEmpleado]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Ne_TurnosOrderBy]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Ne_VerificarIngresosEmpleadoPorDia]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[ObtenerEmpleadoPorCarnet]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[ObtenerEmpleadoPorCodigoONit]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[ONG_Ciclos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[ONG_Facturacion]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Accglest]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_AccGLMAS]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_AccGLMASTraslado]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_AccglPuc]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ACPeriodo]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ACPeriodoCostaRica]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Act_Costo_Kardex]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ActaFinalCot]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Actividades]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ActivosFijos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_actTerceros]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ActualizarFuentes]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ActualzarConfig]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Adicionar_Gastos_DO]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_AFActivoMantenimiento]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_AFActivoSeriales]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_AFAddMejorasActivo]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_AFCodigoBarras]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_AFMantenimientoMateriales]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_AFMantenimientos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_AGENDA]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Altair]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_AppointmentsAgenda]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Asohofrucol]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_AUDITORIA]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_AUI]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Ausentismo_Rango]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_AutoInsert]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_AutoretencionCree]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_AuxPresupuestoGenCot]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_AVConductores2]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_BalanceAperturaActivos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_BalanceAperturaNIIF]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_BalanceAperturaNIIFProveedores]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Bonos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_BuscarCodExtranjero]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_CabeceraDispersionHTurnos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_CAlculoPrioridades]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_CalificacionClientes]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_CalificacionProveedores]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_CambioPrecios_2]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_CambioPrecios]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_CancelacionFacturasVenta]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_CargoEmpPerfil]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_CargosMedico]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_CausarProveedor]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_CCombustible]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Pa_CdpNet]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_CE_InsertContabilidad]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_CFG_Deterioro]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_CheckIngresosEmpleado]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_CITAS]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ciudadDpto]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_CiudadDptoPais]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_CLIENTE_CARTERA]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Clientes]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ClientesConMov]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ClientesFac_DB]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ClientesFac]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ClientesFinanc]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_CliOtrosContactos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_CMICXP]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_CmiLiquidaciones]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_CMISuspensiones]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Codeudores]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ComBFEspecial]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ConceptoPrec]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ConceptoPrecausados]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ConceptosComunes]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ConceptosFacturar_DB]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ConceptosFacturar]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ConceptosPro]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ConceptosTer]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ConceptoSuspension]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ConfigAutorizacion]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ConfigEmail]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ConfigImport]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ConfigPermisos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Consecutivo]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_consolPresupuesto]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ConsultarReversiones]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_CONSUMOPC]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ContabilizarDeterioro]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ContabilizarHTurnos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ContAccGLMAS_OT]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ContAccGLMAS]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ContDescripReg]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ContEntrarDoc]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ContEntrarDocOt]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ContEntrarDocumento]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ContEntrarDocumentoOt]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_CorregirCartera]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_CorregirTraslado]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_CorreoMantenimiento]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_CotAUI]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_COTI_SEGUIM]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Cotizaciones]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_CotizacionesIM]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_CotizacionOtAuto]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Pa_CrearGlog]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Pa_CrearTablaGlog]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_CreateProveedoresFromTerceros]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_CRUD_DocumentosTraza]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_CRUD_TipoMoneda]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[pa_ct_rp]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_DatosBasicosPr]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_DatosEmpresa]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_DeAccGLMAS]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_DeCabeceraDispersion]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Decimales]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_DeclaracionIva]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_DeContabilizar]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_DeDetalleDispersion]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_DeleteContabilidad]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Dependencia]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_DepreActivosFijos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Deprecicacion]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_DepreTipoEquipo]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Descargar_Insumos_Servicios]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_DetalleCContabilidad]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_DeterioroMM]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_DevolucionVen]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Diametro]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_DIVA]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_DnAccGLMAS]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_DnCabeceraDispersion]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_DnContabilizar]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_DnNeHorario]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_DOC_IS_CIERRE]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Documentos_OT]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Dotaciones]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_DpreAccGLMAS]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_DuplicarDatosMtos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_EDITCARTAS]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Email]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_EquivalenciaArt]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Pa_equivalencias]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ExcepcionesDeterioro]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ExcepcionesHorariosTurnos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ExcepcionesValorizacion]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Exceptions]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Executador]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ExportarCotizaciones]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Facturar]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_FacturasCartera]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_FacturaTemporal_DB]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_FacturaTemporal]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_FechasEspeciales]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_FinalizarMtto]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_FLorduy]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_FlujoEfectivoRec]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_FormatoCliente]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Formatos_Chequeo]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_FormatosI]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_FormatosMto]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Formulas]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_GENERARCARTAS]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Gestion_Plantilla]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_GestionCheques]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_GetCajaMenorPUC]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_GETFORMS]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_GETFREC]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_GetTurnos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_GetTurnos2]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_GetUsuario]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_GetVehiculos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_GetVerdaderoConsecutivo]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_GLDBU]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_GraficasPersonas]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_GrillasGetPro]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_GrillasPlantillaPB]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_GrillasPlantillaPM]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_guardar_PPA_CMIinv]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Guardar_Recibo_de_Caja]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_GuardarHistorico]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Pa_HeaderCicloRetorno]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_HistEjeMto]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_HistorialContabilidad]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_HistorialMtto]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_HOJADEVIDA]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_HojaVidaMtto]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_HorarioTurnos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ImpNominaEmp]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ImportarFiles]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ImportarFilesSyso]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ImprimirComprobante]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ImprimirComprobantes]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_IndicadoresClientes]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_IndicadoresPermisos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_IndicadoresVendedor]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Insertador_2]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Insertador]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Insertar_ContAccGLMASOT]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Insertar_Dependecias]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_InsertBkMovi]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_InsertIngresoEmp]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Insertion_Fail]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_InsertRecSalida]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_InsertSalidaEmp]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_InsertTerceros]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_INV_GL_CFG]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_IsHoraExt]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_IsRecargo]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Kardex_Trans]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Kardex]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_KardexConsolidado]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_lecturaCombustible]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_logProcesos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_MailRecepcion]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Mantemientos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Manual_Funciones_Periodo_RH]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_MigraPresupuesto]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ModelosContables]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_MotivosPermisos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_MtoCmiMantenimiento]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_MtoEquipoMantenimiento]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_MtoSaldosIniMantenimientos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_MttoConfig]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_MttoPorMes]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_MttoRegact]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_MttoRegAcuAux]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_NE_Manual_Funciones_Cargo]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_nePermiso]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_nePQR]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_nePQRCl]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_neReclamo]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_neSuspension]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_NOTASDS_MAPPER]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_NovedadesEmp]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_NovFjs]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_NtConfigMail]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_NtEnviosMails]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_NtNotificaciones]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_NtPerfiles]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ObtenerAusentismos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ObtenerConfiguracionGeneral]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_OpcionPagos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_OperacionPresupuestos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Orden_estaCerrada]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Ordenes_Permisos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Ordenes]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_OrdenesIM]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_OrdenesIMante]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_OrdMov]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Originadores]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_OTROS-EST_PRO]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_OTROS-EST]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Permisos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_PlanillaCombustible]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_PlanMto]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_PlantillaEmail]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_PlantillaRec]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[pa_plantillas_inv]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Politicas_NIIF_Periodo]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_PQRCFG]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_PrecioRen]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_PrestAutor]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Presupuesto]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_PresupuestoCabecera_DEPENDENCIA]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_PresupuestoCabecera]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_PresupuestoDetalle]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_PresupuestoGenCot]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_PresupuestoGenCotRentabilidad]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_PresupuestoICG]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_PresupuestoWithRentability]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_PRINC-PROV]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_PrintCausacion]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Prioridades]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_PRMProv]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_PROD-CONS]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ProgMantenimiento]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ProOtrosContactos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Prosistema]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ProsistemaAV]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Provee]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_PROYEC_RECAUDO]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Puc_Clasificacion_Det]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Puc]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_PucTipoDiferido]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Razones]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_RecaudoCartera]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_RecepcionStd]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_RecFacturas]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_RecHumanos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Recibo_de_Caja]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Recordatorio]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_RecordatorioDest]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Reemplazar_Articulos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_REFER]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ReforzarOtInterna]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_REGEMP]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Relacion_Formatos_Chequeo]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ReportesOT]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ReportesVentasDetalle]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ReqIntOt]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Resolucion]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_RETIRAR-CLIENTE]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ReversarCDP]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ReversarCXP]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_RptCumpleaños]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_RptHojaVida]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_RptRetfteInfoConfig]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_SaldosActivos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_SaldosInicialesTerceros]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ScheduledJobs]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ScorProv]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_SelectDetalleCotizacion]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_SelectGetPuc]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_SetColumnDescription]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_SetDocumentacionTabla]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_SetExtendedProperty]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Sgd]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_SgdRelaciones]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ShowitArticulo]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_SinconizarContabilizar_DB]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_SinconizarContabilizar]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_StdKardex]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_SueldoEmp]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Swicth_Board]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Tecnicos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_TERCEROS]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_TercerosGeneral]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_TextoWord]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_TipoActivo]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_TipoAusentismo]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_TMPContabilidad]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Trabajos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_TrasladoFondos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Traslados]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_TrasladoSubcentro]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_TrazaActividades]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_TrazaActividadesRiesgos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_TrazabilidadActRie]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_TrazabilidadOt]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_TrazabilidadOTNew]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_TrazaColumnas]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_TrazaFilas]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_TrazaRiesgos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Trazas_Info]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Trazas]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_UGPP]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_UtilidadXServicios]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Vehiculos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_Vendedores]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_ViewCMIVentas]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_VigenciaFacturacion]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PA_VRecords]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Ponderar_Costo]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Prestamo_cantidad]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PRESTAMO_HERRAMIENTA_CONSULTA1]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PRESTAMO_HERRAMIENTA_IMPRESION]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PRESTAMO_HERRAMIENTA]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Print_Orden_Compra]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PRO_COnsulta_Anticipos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Pro_Reposiciones]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Abonar_Cuotas]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_accMAS_Desproduccion]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Act_AccglartiDep]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Act_Soli]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Actualizar_Datos_Rete]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Actualizar_Punto]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Actualizar_Saldo_Inicial]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_ActualizarEstadosC]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_adicionar_contrato]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_AdjuntoFacel]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Administracion_Turnos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_Afectar_Presupuesto]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_AJUproduccion]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PROC_AJUSTAR_DISPERSION_NOMINA]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Ajustes_Inv]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_AnalisisVen]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_AnalisisVenCMI_Old]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_AnalisisVenCMI]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Anticipos_Dolar]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Anticipos_LEGALIZAR]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Anticipos_Nomina]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Anticipos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Anu_Doc_Soporte]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Anulaciones_Devoluciones_FR]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Anulaciones_Devoluciones]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Anular_Documento]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Anular_Factura]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Apertura_NIIF_Tercero]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Apertura_NIIF]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Aporte_Ley_Dispersion]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Aporte_Ley_Liquidacion]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Aporte_Ley_Nomina]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Aporte_Ley_Vaca]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Aporte_Ley]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_ArchivoBancos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Areas]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Armar_Doc_Compras]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Arreglar_Kardex_Cantidad]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Arreglar_Kardex_Especial]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Arreglar_Kardex]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Arreglar_Retegarantias]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_Articulos_Desproduccion]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_Articulos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_ArtLotes]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Asiento_CXP_Automatico_OS]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Asiento_CXP_Automatico_precausado]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Asiento_CXP_Automatico]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_AsignarExistencia]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Auditar_Documentos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Auditora_Doocumentos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Auditoria_Inv]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Auditoria_Inventario_Contabilidad]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Auditoria_Inventario]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Ausentismos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_AutoreteNet]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Borrado_Doc]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_Borrar_Cruce_Anticipo]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_Borrar_PROG_CM]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_BorrarDOCUMENTO]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Buscar_Articulo]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_buscar_consecutivo_factura]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Buscar_Consecutivo_Fuente]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Buscar_Consecutivo]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Buscar_Lotes_Despacho]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Buscar_Lotes_Disponibles]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_buscarHeadSegui]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Caja_Menor_GEN]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Caja_Menor]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Calcular_Formula]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_Calcular_Totales_Cotizacion]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_CalifiCarteta]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Calucular_Horas_Extras]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Cambiar_Cliente_Factura]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Cargar_Incapacidad]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_CargarRetencion_CXP]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Cartera_Cliente_temporal]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Cartera_Cliente_X_VENDEDOR]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Cartera_Cliente]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Causar_Mercancia_Consignacion]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Causar_Suspensiones]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_CbtePagoEmpleadoNet]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_ccArti2]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_ccArtiNet]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_ccostos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_CentroCostos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_CfgPlanilla]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Cierre_Nomina]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Cierre_Salida_Almacen]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Cierre_Venta_IMPRIMIR]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Cierre_Venta]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_CIFIN]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PROC_CLIENTES]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Comparar_Cartera_Conta]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Compra_Ingecool]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Compra_VerEditar]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Compra]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Compras_View_Net]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Compras_View]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Concepto_Inventario]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_ConceptosRetencionesShowIt]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_conciliacion]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_ConCombustible]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Conf_DescuentoCab]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Conf_DescuentoDet]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_Configurar_Ingresos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_Consolidado_pendientes]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_Consolidado_Producccion_detalle]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_Consolidado_Producccion]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_ConsulContabilidad_Net]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Consulta_Nomina_Detallada_NET]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Consulta_Nomina_Detallada]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Consulta_Por]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Consultar_Ajustes_Inv]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Consultar_Incapacidad]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Consultar_Kardex]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Consultar_Tesoreria]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_ConsultarCarteraPendiente]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_ConsultarEmp_Dispersion]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Contabilidad]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Contabilizar_Ajuste_Inv]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Contabilizar_NC]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Contabilizar_Nomina]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Contabilizar_Recibo]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Contabilizar]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Control_Vencimiento]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Correccion_Cartera_Pasiva]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Correccion_Cartera]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Correccion_Kardex]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Correccion_Permisos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Corregir_DOC_SIN_FTE]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Cotizacion_Det]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Cotizacion_Lotes]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Cotizacion]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Cotizaciones_Ingecool]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Crear_Familia]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_CtaDispersables]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Cuadrar_Documentos_Descuadrados]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_CuadreCaja]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_cuentas_NIIF_ELIMINAR]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_cuentas_NIIF_GUARDAR]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_cuentas_NIIF]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Cuentas_Pagar]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_CuentasNIIF]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_CuentasPCGA]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_CxCAnalisis]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_DataCredito]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Datos_Retencion]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_Debug_Cuentas_INV]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_DefTopes]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Descargar_Formula]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_Desproduccion]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_DispersionFondos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Doc_Soporte]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_dupliDocumento]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Ejecutar_Archivo_Sql]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_Equipos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_EstadisticaArticulo]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Estado_Aux_OT]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Estado_Aux_Todos_OT]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Estado_Aux_Todos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Estado_Aux]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Estado_Auxiliar_Centro]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Estado_Auxiliar_niif]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Estado_Auxiliar_SubCentro]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Estado_Auxiliar]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Estado_Costo]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_estado_meses]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Estado_Resultado]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PROC_EXEQUIAL_INI]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Exportar_Ordenes]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_ExpVentas]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Factura_Credito]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Factura_DB]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Factura_NIIF]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Factura_To_Facel]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Factura]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_FacturaPOS]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Facturar_Compra]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_FacturasEl_Mapper_CT]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_FacturasEl_Mapper]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_FichaTecnica]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_FiltroListPrecios]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Formatos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_Formulas]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_ForPresupuesto]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Gen_Traslado]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Generar_Novedades_Nomina]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Generar_Orden]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Generar_Plano_Colpatria]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_GenerarEgreso]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_GenerarEgresoUnif]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_GENPropagos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_gestion_sw]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Gestion_Turnos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_GET_DATA_articulos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Get_Moneda]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_GetDebitoOriginal]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_GetPucInventario]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Giros]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_GlCdp]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_glPti_CFG]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_GriArticulos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_GriFormulasJ]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_GriProgramaPagos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_Guardar_accMAS]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Guardar_Bitacora]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Guardar_Contabilidad]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Guardar_Doc_Soporte]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Guardar_Pago_CXC]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Guardar_Pago_CXP]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_guardar_pedido]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Guardar_Saldo_Cartera]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Guardar_Saldos_Centros]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Guardar_Saldos_Terceros]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_HorariosTurnos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Horas_Extra]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Importar_Saldos_Iniciales]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_ImportarSaldos_Familias]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Imprimir_Dev]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Imprimir_Documentos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Imprimir_Etiqueta]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Imprimir_Liquidacion]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Imprimir_Nota]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Imprimir_RC]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Imprimir_Recibo]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_ImputacionBorrar]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Indicadores_Inventario]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Informacion_Exogena]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Informe_Articulos_Vencidos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_informe_compras_periodo]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Informe_Ventas_Relojes]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Informes_Contables_OT]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Informes_Contables]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Inscripcion_Mat]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Insertsar_Lotes_Disponibles]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Instrumentos_Financieros]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Inventario_Inicial]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Inventario_Medida_Net]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Inventario_Medida]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_InvLineas]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_LegalizarAnticipo_CAUSAR_CDP]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_LegalizarAnticipo_CAUSAR]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_LegalizarAnticipo_CONSULTA]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_LegalizarAnticipo_ELIMINAR]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_LegalizarAnticipo_SUMACAUSADO]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Libro_Diario]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Liquidacion_Prestaciones]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Liquidacion]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Liquidar_Dispersion]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Liquidar_Vaca]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Lista_CXP_Automatico]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Listado_Cartera]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Listado_CXC]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Listado_CXP]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_ListaEquivalencias]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_ListarArticulos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_Load_Articulos_Cotizacion_Fila]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_Load_exequial]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_MaestroNomina]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Magneticos_CxP]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_Manual_Funciones_CONSULTAR_RH]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_Manual_Funciones_CONSULTAR_texto_RH]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_Manual_Funciones_ELIMINAR_RH]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_Manual_Funciones_ELIMINAR]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_Manual_Funciones_GUARDAR_RH]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_Manual_Funciones_MODIFICADO_RH]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_Manual_Funciones_UPDTEXTO_RH]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Material_Consignacion]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_MemoTitulos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_mi_sp_save_orden]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_nePermisoCartas]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_nePermisoCfg]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_NotasEl_Db]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_NotasEl]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Novedades_Masivas]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Nueva_Version_Compras]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Orden_ClasificacionPuc]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PROC_Orden_Compra_SP]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Orden_Compra]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Orden_Contratacion_DETALLADO]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Orden_Contratacion]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PROC_Orden_Email]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_orden_servicio]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_Ordenes_Servicio]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PROC_OS]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_pago_compra]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_ParaFiscales_Dispersion]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_ParaFiscales_Liquidacion]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_ParaFiscales_Nomina]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_ParaFiscales_Vaca]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_ParaFiscales]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_pedidos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_pendiente_por_adquirir]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PROC_Peticion_Oferta]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_PILA]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_PlaniCombustible]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_planilla_combustible_detalle]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_planilla_combustible_periodo]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_planilla_combustible_proveedor]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_planilla_combustible_totales_cuentas]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_planilla_combustible_totales]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_planilla_combustible_vehiculo]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_planilla_combustible]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Planilla_Nomina]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_Politicas_NIIF_CONSULTAR_texto]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_Politicas_NIIF_CONSULTAR]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_Politicas_NIIF_ELIMINAR]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_Politicas_NIIF_GUARDAR]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_Politicas_NIIF_MODIFICADO]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_Politicas_NIIF_UPDTEXTO]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_pqrTratamiento]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_PreCierre]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Prefacturas]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Preoper_Net]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_print_ALL_cruce]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Print_Conciliacion]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_print_cruce]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_print_DocEqu]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Print_DocSoporte]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Print_Factura_Do]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Print_Factura_F]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Print_Factura_FTempo]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Print_Factura_Gas]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Print_Factura]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Print_Nota_Entrada]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Print_Notas]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Print_Orden_entrega_compra]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_print_Ordenes_Servicio]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Print_PEDIDO_GL]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Print_Pedidos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Print_Remision]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Propagos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_ProsistemaAF]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Provisiones_Dispersion]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Provisiones_Liquidacion]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Provisiones_Nomina]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Provisiones_Vaca]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Provisiones]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Proyectar]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Recalcular_Costo_Servicios]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Recalcular_Costo]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Recalcular_Costo2]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_recibo_compra]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Reconstruccion_Inv]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Reducir_Log]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_RegAusentismo]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_RegCausacionCxp]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_RegCausacionGlmas]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Relacion_Ant_Rete]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Relacion_Costos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Relacion_FacturaPos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Relacion_Nomina]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Remision]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_remisiones_DETALLADO]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_remisiones]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Reportes_BellePiel]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Reportes_Nomina]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_ReporteVentasV]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Requicisiones_Compra]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_requiere_combustible]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Requisicion_Interna]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Requisiciones_Comprar]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Requisiciones_GLAPP]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_REV_ReajustePrecio]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Reversar_Acta_Entrega]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Rpt_Reqinterna]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_RptEmpleadosFinContrato]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_RptFicTecVeh]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_RptHjaVida]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_RptSaldosBancarios]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_RptSalidaCombustible]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_SalAlmacen_Net]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_SaldoInicialesNet]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_salida_almacen]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_SancioCuestionario]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_save_factura_credito_tempo]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_save_factura_credito]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[PROC_SERVICIOS]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_ServiPrestado]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Solicitud_Retencion]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Solicitudes]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Temp_Guardar_Contabilidad]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Tercero_To_Cliente]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_TipoDoc]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_TipoDocumento]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_TipoTurno]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Total_Venta]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Traslado_Automatico]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Traslado_Det]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Traslado]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_TrasladoFamilia]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Traslados_Movimientos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Traslados_Vtas]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Tributario]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Tributario2]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_TurnoReemplazo]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_UGPP]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Update_Articulo]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Update_Formula]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_UPDATE_tipoCombustible]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_UpdateBancoAlGenerarEgresoUnif]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_usuarios]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Utilidad_Proceso_Fiscal]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_vacaciones_pendientes]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Valid_PucInventario]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_validar_cuenta_NIIF]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Validar_Exencion_IVA]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Validar_Existencia_Art]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Validar_Nomina]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_ValidarFactura]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_VENCIMIENTOS_VEHICULOS]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Venta_Detalle]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_VENTAS_GL]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Ventas_Ingecool]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_Ventas_Maroel_DETALLE]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_Ventas_Maroel]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_VentasVendedor]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[proc_verificar_Puc_Inventario]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_VerificarReversion]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Proc_Visualizar_Lotes]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[remision_concre_aceros]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[RETIRO_ASOCIADO]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[REVERSAR_CONTABILIDAD]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Reversar_Documento]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Reversar_vacaciones]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[S_ACCGLMAS]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Saldo_Obligacion]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[seriales_disponibles]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_ADDSERVICIO_OT]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_ANULAR_OT]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Sp_Arti]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_Articulo]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_ArticuloLotes]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_articulos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_AuditoriaIva]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_BKCHPOST]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_Causar_Combustible]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_CHANGE_pedidos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_CloseMes]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_COMPROBANTE_PAGO_PENDIENTE]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_COMPROBANTE_PAGO]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_Consulta_Cli]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_Consulta_Cli2]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_ConsultaPos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_Contabilidad_Costo]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_Contabilidad]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_Contabilidad2]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_Corregir_SI]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_CORTE_CARTERA]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_CREATEDATABASE]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_CWIva]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_DELSERVICIO_OT]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_EndPeriodo]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_Generar_NIIF_SI]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_GetInventoryCountListUsersToShare]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_GetMenu]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_GETNORENOVADOS]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_GETRENOVADOS]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_Guardar_EJEC_PRES_OT]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_HayNominaCausada]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_Imp_Factura]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_IMPORTAR_CARTERA]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_Importar_Prov_Cxp]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Sp_ImportarSaldosIniciales]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_InventoryCountSaveUsersToShare]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_Load_Horas]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_load_movimientos_horas]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_Mas1]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_Mas1cco]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_Masold]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_Masoldcco]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_MASPORPERIODOS]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_MovAuxTer_cco_ot]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_MovAuxTer_cco]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_MovAuxTer_OT]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_MovAuxTer]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_NIIF_Amortizacion]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_NominasCausadas]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_OpenMes]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_OTROS]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_Pedido_Detalle]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_pedidos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_PRESUPUESTO]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_Procedimiento_Analitico]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_PROYECCION_IMP]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_Proyeccion_Recaudo]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_PROYECCION]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_pru]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_RECAUDO_CARTERA]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_RECAUDO]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Sp_ResponFiscalesCli]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_return_stock]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_REVERSAR_NOTA_tiquete_CXP]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_SalAnterior_cco_ot]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_SalAnterior_cco]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_SalAnterior_OT]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_SalAnterior]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_SALDO_CLIENTE_ESTABLECIMIENTO]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_SALDO_CLIENTE]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_SALDOCARTERA]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_SaldoInicial]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_SaldoInicialMtto]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_Save_Horas]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_update_articule]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_Update_Precios]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SP_UPDATEDATABASE]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[sp_UpdateSaldosIni]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SpBalGetConceptos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SpCargarAccglArtiInicialNiif]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SpContabilizarInventarioNiif]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SpCrearMovNiif]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SpDelConceptoBal]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SpDelGlModCierre]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SpDelModContRptBal]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SpEjecucPresupDiaDepen]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SpEjecucPresupDiaVend]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SpEjecutarInstrRegistroVenta]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SpGenerarMovNiif]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SpGenGlModCierre]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SpGetArtiniifinicial]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SpGetBalanceAperturaArticulos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SpGetBalConceptos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SpGetBalDetalle]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SpGetGlCierreTer]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SpGetGlModCierre]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SpGetInfoBal]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SpGetInfoBalAcum]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SpGetModCierreById]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SpGetRelBal]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SpGetRelBalance]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SpInsAccglartiNiifInicial]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SpInsConceptoBal]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SpInsCuentRelBal]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SpInsGlCierreTer]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SpInsGlModCierre]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SpManageInsimpro]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SpManageProduccion]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SpObtenerLogMovNiif]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[spOITCompanies]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[spOITParametros]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SPR_TransformarInventario]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SpReversarBalAperArticulos]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SpUpdateKardexProduccion]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SpUpdConceptoBal]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SpUpdConsecutivo]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SpUpdGlModCierre]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[traerDepenCentroCosto]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[unload_Formula]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Updatekardex]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[usp_AddScheduledJob]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[usp_FacelGLMailResponse]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[usp_FacelGLManageCompanies]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[usp_FacelGLManageDocuments]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[usp_FacelGLManageResolutions]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[usp_ManageDocumentsNomina_verificar]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[usp_ManageDocumentsNomina]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[usp_ManageInvoiceReceived]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[usp_proaccglpro]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[usp_proclientes]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[usp_proglpuc]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[usp_proterceros]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[usp_RemoveScheduledJob]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[usp_RunScheduledJob]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Validar_Periodo]",
+         "ObjectType": 1
+      }
+   ],
+   "UiHint": "desktop-36cfolr.SISMEDICAERP.dbo",
+   "UncountableWords": null,
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDateOnlyTimeOnly": false,
+   "UseDbContextSplitting": false,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": true,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UseSchemaFolders": false,
+   "UseSchemaNamespaces": false,
+   "UseSpatial": false,
+   "UseT4": false
+}
