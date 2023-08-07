@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using generalapi.Models;
+using System.Text.Json.Nodes;
+using NuGet.Protocol;
 
 namespace generalapi.Controllers
 {
@@ -83,37 +85,118 @@ namespace generalapi.Controllers
             return NoContent();
         }
 
-        // POST: api/APP_SP_DrugsDeliveryConsumerViewArticlesResult
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+
+
+
+
+
+
+
+
+
+
+
         [HttpPost]
-        public async Task<ActionResult<APP_SP_DrugsDeliveryConsumerViewArticlesResult>> PostAPP_SP_DrugsDeliveryConsumerViewArticlesResult(APP_SP_DrugsDeliveryConsumerViewArticlesResult aPP_SP_DrugsDeliveryConsumerViewArticlesResult)
+        //public IActionResult InsertConsumibles(List<generalapi.Models.Consumible> consumibles)
+        //public IActionResult InsertConsumibles([FromBody] Consumible[] consumibles)
+        //{
+        public async Task<ActionResult<Consumible>> PostAPP_SP_DrugsDeliveryConsumerViewArticlesResult([FromBody] Consumible[] jsonArray)
         {
-          if (_context.APP_SP_DrugsDeliveryConsumerViewArticlesResult == null)
-          {
-              return Problem("Entity set 'SISMEDICAERPContext.APP_SP_DrugsDeliveryConsumerViewArticlesResult'  is null.");
-          }
-            _context.APP_SP_DrugsDeliveryConsumerViewArticlesResult.Add(aPP_SP_DrugsDeliveryConsumerViewArticlesResult);
+            var algunacosa = jsonArray.ToList<generalapi.Models.Consumible>;
+            var algunacosa2 = algunacosa;
+            var algunastring = algunacosa.ToString;
+            var contador = algunastring.ToJson;
+            var nuevoJson = contador.ToString;
+
+
             try
             {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateException)
-            {
-                if (APP_SP_DrugsDeliveryConsumerViewArticlesResultExists(aPP_SP_DrugsDeliveryConsumerViewArticlesResult.ArticleCode))
+                // Agregar la lista de consumibles a la base de datos
+                //_context.Consumibles.AddRange(consumibles);
+                //_context.Consumible.AddRange(jsonArray);
+                foreach (var consum in jsonArray)
                 {
-                    return Conflict();
+                    _context.Consumible.Add(consum);
+                    _context.SaveChanges();
                 }
-                else
-                {
-                    throw;
-                }
-            }
 
-            return CreatedAtAction("GetAPP_SP_DrugsDeliveryConsumerViewArticlesResult", new { id = aPP_SP_DrugsDeliveryConsumerViewArticlesResult.ArticleCode }, aPP_SP_DrugsDeliveryConsumerViewArticlesResult);
+                
+
+                return Ok("Lista de consumibles insertada correctamente.");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest("Error al insertar la lista de consumibles: " + ex.Message);
+            }
         }
 
-        // DELETE: api/APP_SP_DrugsDeliveryConsumerViewArticlesResult/5
-        [HttpDelete("{id}")]
+
+        /*
+        private List<Models.Employee> SortEmployees(List<Models.Employee> employees)
+        {
+        }
+        */
+
+            /*
+
+            // POST: api/APP_SP_DrugsDeliveryConsumerViewArticlesResult
+            // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+            [HttpPost]
+            //public async Task<ActionResult<APP_SP_DrugsDeliveryConsumerViewArticlesResult>> PostAPP_SP_DrugsDeliveryConsumerViewArticlesResult(APP_SP_DrugsDeliveryConsumerViewArticlesResult aPP_SP_DrugsDeliveryConsumerViewArticlesResult)
+            public async Task<ActionResult<Consumible>> PostAPP_SP_DrugsDeliveryConsumerViewArticlesResult([FromBody] Consumible[] jsonArray)
+            {
+                var algunacosa = jsonArray; 
+                var algunacosa2 = algunacosa;
+                var algunastring = algunacosa.ToString;
+                var contador = algunastring.ToJson;
+                var nuevoJson = contador.ToString;
+
+
+                foreach (var item in algunacosa)
+                {
+                    var jeje = _context.APP_SP_DrugsDeliveryConsumerViewArticlesResult
+                      //.FromSqlRaw($"INSERT INTO GlappDrugsDeliveryConsumptionDet (ConsumptionID,ArticleCode,Quantity,UnitOfMeasure,CreationDate) VALUES(1,'MOV-ASEO-020',1,'UND','2023-01-14 09:15:07.760')")
+                      .FromSqlRaw($"SELECT * FROM GlappDrugsDeliveryConsumptionDet")
+                      .ToList();
+                }
+
+                var loquevino = algunacosa2.GetEnumerator;
+                if (_context.APP_SP_DrugsDeliveryConsumerViewArticlesResult == null)
+              {
+                  return Problem("Entity set 'SISMEDICAERPContext.APP_SP_DrugsDeliveryConsumerViewArticlesResult'  is null.");
+              }
+                //_context.APP_SP_DrugsDeliveryConsumerViewArticlesResult.Add(aPP_SP_DrugsDeliveryConsumerViewArticlesResult);
+
+
+
+
+            ///////////////
+                try
+                {
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateException)
+                {
+                    if (APP_SP_DrugsDeliveryConsumerViewArticlesResultExists(aPP_SP_DrugsDeliveryConsumerViewArticlesResult.ArticleCode))
+                    {
+                        return Conflict();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+
+
+                return CreatedAtAction("GetAPP_SP_DrugsDeliveryConsumerViewArticlesResult", new { id = aPP_SP_DrugsDeliveryConsumerViewArticlesResult.ArticleCode }, aPP_SP_DrugsDeliveryConsumerViewArticlesResult);
+                /////////////////
+                ///
+                return NoContent();
+            }
+            */
+
+            // DELETE: api/APP_SP_DrugsDeliveryConsumerViewArticlesResult/5
+            [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteAPP_SP_DrugsDeliveryConsumerViewArticlesResult(string id)
         {
             if (_context.APP_SP_DrugsDeliveryConsumerViewArticlesResult == null)

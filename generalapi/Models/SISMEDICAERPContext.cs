@@ -53,6 +53,22 @@ namespace generalapi.Models
                 */
             });
 
+            modelBuilder.Entity<Consumible>(entity =>
+            {
+                entity.HasKey(e => e.ConsumptionID)
+                    .HasName("PK__products__1E5A0B8E2D96C866");
+                //entity.ToTable("acccccxc");
+                //entity.
+                entity.Property(e => e.ConsumptionID).HasColumnName("ConsumptionID");
+                /*
+                entity.Property(e => e.Consumer)
+                    .IsRequired()
+                    .HasMaxLength(255)
+                    .IsUnicode(false)
+                    .HasColumnName("Consumer");
+                */
+            });
+
             OnModelCreatingGeneratedProcedures(modelBuilder);
             OnModelCreatingPartial(modelBuilder);
         }
@@ -60,8 +76,9 @@ namespace generalapi.Models
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
         public DbSet<generalapi.Models.APP_SP_DrugsDeliveryConsumerViewHeaderResult> APP_SP_DrugsDeliveryConsumerViewHeaderResult { get; set; }
         public DbSet<generalapi.Models.APP_SP_DrugsDeliveryConsumerViewArticlesResult> APP_SP_DrugsDeliveryConsumerViewArticlesResult { get; set; }
+        public DbSet<generalapi.Models.Consumible> Consumible { get; set; }
 
-        
+
 
     }
 }
