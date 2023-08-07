@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace generalapi.Models
 {
-    public partial class AAAGlapp_SP_DrugsDeliveryConsumerViewArticlesBorrarResult
+    public partial class APP_SP_DrugsDeliveryConsumerViewArticlesResult
     {
         public string ArticleCode { get; set; }
         public string ArticleDescription { get; set; }

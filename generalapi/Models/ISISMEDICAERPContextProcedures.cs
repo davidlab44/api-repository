@@ -12,7 +12,6 @@ namespace generalapi.Models
 {
     public partial interface ISISMEDICAERPContextProcedures
     {
-        Task<List<AAAGlapp_SP_DrugsDeliveryConsumerViewArticlesBorrarResult>> AAAGlapp_SP_DrugsDeliveryConsumerViewArticlesBorrarAsync(string P_User, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
         Task<int> Act_InventarioAsync(string Articulo, string Dependencia, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
         Task<int> Act_StockAsync(string Dependencia, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
         Task<int> Activar_ComandasAsync(string nFactura, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
@@ -21,6 +20,7 @@ namespace generalapi.Models
         Task<int> acualiza_ciudadesAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
         Task<int> Agregar_DefaultAsync(string tabla, string campo, string Default, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
         Task<int> AGREGAR_DEFAULT_TOTALAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
+        Task<List<APP_SP_DrugsDeliveryConsumerViewArticlesResult>> APP_SP_DrugsDeliveryConsumerViewArticlesAsync(string P_User, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
         Task<List<APP_SP_DrugsDeliveryConsumerViewHeaderResult>> APP_SP_DrugsDeliveryConsumerViewHeaderAsync(string P_User, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
         Task<List<APP_SP_DrugsDeliveryConsumerViewSaveResult>> APP_SP_DrugsDeliveryConsumerViewSaveAsync(string P_ConsumerUser, string P_Vehicle, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
         Task<int> borra_campoAsync(string tabla, string campo, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);

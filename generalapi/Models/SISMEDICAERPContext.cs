@@ -4,7 +4,6 @@ using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
-using generalapi.Models;
 
 namespace generalapi.Models
 {
@@ -19,18 +18,9 @@ namespace generalapi.Models
         {
         }
 
-       
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.UseCollation("SQL_1xCompat_CP850_CI_AS");
-            //modelBuilder.Entity<AAAGlapp_SP_DrugsDeliveryConsumerViewArticlesBorrarResult>().HasNoKey().ToView(null);
-            //modelBuilder.Entity<APP_SP_DrugsDeliveryConsumerViewHeaderResult>().HasNoKey().ToView(null);
-            //modelBuilder.Entity<APP_SP_DrugsDeliveryConsumerViewHeaderResult>().HasNoKey();
-            //modelBuilder.Entity<APP_SP_DrugsDeliveryConsumerViewHeaderResult>().HasNoKey();
-
-
-            
             modelBuilder.Entity<APP_SP_DrugsDeliveryConsumerViewHeaderResult>(entity =>
             {
                 entity.HasKey(e => e.License)
@@ -46,24 +36,32 @@ namespace generalapi.Models
                     .HasColumnName("Consumer");
                 */
             });
-            
-            
 
-            /*
-            modelBuilder.Entity<Glapp_SP_DrugsDeliveryConsumerViewArticlesResult>(entity =>
+            modelBuilder.Entity<APP_SP_DrugsDeliveryConsumerViewArticlesResult>(entity =>
             {
                 entity.HasKey(e => e.ArticleCode)
                     .HasName("PK__products__1E5A0B8E2D96C866");
+                //entity.ToTable("acccccxc");
+                //entity.
+                entity.Property(e => e.ArticleCode).HasColumnName("ArticleCode");
+                /*
+                entity.Property(e => e.Consumer)
+                    .IsRequired()
+                    .HasMaxLength(255)
+                    .IsUnicode(false)
+                    .HasColumnName("Consumer");
+                */
             });
-            */
-
 
             OnModelCreatingGeneratedProcedures(modelBuilder);
             OnModelCreatingPartial(modelBuilder);
         }
 
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
-
         public DbSet<generalapi.Models.APP_SP_DrugsDeliveryConsumerViewHeaderResult> APP_SP_DrugsDeliveryConsumerViewHeaderResult { get; set; }
+        public DbSet<generalapi.Models.APP_SP_DrugsDeliveryConsumerViewArticlesResult> APP_SP_DrugsDeliveryConsumerViewArticlesResult { get; set; }
+
+        
+
     }
 }

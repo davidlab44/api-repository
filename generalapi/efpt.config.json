@@ -16,10 +16,6 @@
    "T4TemplatePath": null,
    "Tables": [
       {
-         "Name": "[dbo].[AAAGlapp_SP_DrugsDeliveryConsumerViewArticlesBorrar]",
-         "ObjectType": 1
-      },
-      {
          "Name": "[dbo].[Act_Inventario]",
          "ObjectType": 1
       },
@@ -49,6 +45,10 @@
       },
       {
          "Name": "[dbo].[Agregar_Default]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[APP_SP_DrugsDeliveryConsumerViewArticles]",
          "ObjectType": 1
       },
       {

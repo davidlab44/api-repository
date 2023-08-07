@@ -34,10 +34,10 @@ namespace generalapi.Models
 
         protected void OnModelCreatingGeneratedProcedures(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<AAAGlapp_SP_DrugsDeliveryConsumerViewArticlesBorrarResult>().HasNoKey().ToView(null);
             modelBuilder.Entity<Activar_Comandas_efectivoResult>().HasNoKey().ToView(null);
+            //modelBuilder.Entity<APP_SP_DrugsDeliveryConsumerViewArticlesResult>().HasNoKey().ToView(null);
             //modelBuilder.Entity<APP_SP_DrugsDeliveryConsumerViewHeaderResult>().HasNoKey().ToView(null);
-            modelBuilder.Entity<APP_SP_DrugsDeliveryConsumerViewSaveResult>().HasNoKey().ToView(null);
+            //modelBuilder.Entity<APP_SP_DrugsDeliveryConsumerViewSaveResult>().HasNoKey().ToView(null);
             modelBuilder.Entity<busca_equivalencias_formulaResult>().HasNoKey().ToView(null);
             modelBuilder.Entity<busca_prefacturaResult>().HasNoKey().ToView(null);
             modelBuilder.Entity<consolidado_residuosResult>().HasNoKey().ToView(null);
@@ -850,33 +850,6 @@ namespace generalapi.Models
             _context = context;
         }
 
-        public virtual async Task<List<AAAGlapp_SP_DrugsDeliveryConsumerViewArticlesBorrarResult>> AAAGlapp_SP_DrugsDeliveryConsumerViewArticlesBorrarAsync(string P_User, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
-        {
-            var parameterreturnValue = new SqlParameter
-            {
-                ParameterName = "returnValue",
-                Direction = System.Data.ParameterDirection.Output,
-                SqlDbType = System.Data.SqlDbType.Int,
-            };
-
-            var sqlParameters = new []
-            {
-                new SqlParameter
-                {
-                    ParameterName = "P_User",
-                    Size = 100,
-                    Value = P_User ?? Convert.DBNull,
-                    SqlDbType = System.Data.SqlDbType.VarChar,
-                },
-                parameterreturnValue,
-            };
-            var _ = await _context.SqlQueryAsync<AAAGlapp_SP_DrugsDeliveryConsumerViewArticlesBorrarResult>("EXEC @returnValue = [dbo].[AAAGlapp_SP_DrugsDeliveryConsumerViewArticlesBorrar] @P_User", sqlParameters, cancellationToken);
-
-            returnValue?.SetValue(parameterreturnValue.Value);
-
-            return _;
-        }
-
         public virtual async Task<int> Act_InventarioAsync(string Articulo, string Dependencia, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
         {
             var parameterreturnValue = new SqlParameter
@@ -1101,6 +1074,33 @@ namespace generalapi.Models
                 parameterreturnValue,
             };
             var _ = await _context.Database.ExecuteSqlRawAsync("EXEC @returnValue = [dbo].[AGREGAR_DEFAULT_TOTAL]", sqlParameters, cancellationToken);
+
+            returnValue?.SetValue(parameterreturnValue.Value);
+
+            return _;
+        }
+
+        public virtual async Task<List<APP_SP_DrugsDeliveryConsumerViewArticlesResult>> APP_SP_DrugsDeliveryConsumerViewArticlesAsync(string P_User, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
+        {
+            var parameterreturnValue = new SqlParameter
+            {
+                ParameterName = "returnValue",
+                Direction = System.Data.ParameterDirection.Output,
+                SqlDbType = System.Data.SqlDbType.Int,
+            };
+
+            var sqlParameters = new []
+            {
+                new SqlParameter
+                {
+                    ParameterName = "P_User",
+                    Size = 100,
+                    Value = P_User ?? Convert.DBNull,
+                    SqlDbType = System.Data.SqlDbType.VarChar,
+                },
+                parameterreturnValue,
+            };
+            var _ = await _context.SqlQueryAsync<APP_SP_DrugsDeliveryConsumerViewArticlesResult>("EXEC @returnValue = [dbo].[APP_SP_DrugsDeliveryConsumerViewArticles] @P_User", sqlParameters, cancellationToken);
 
             returnValue?.SetValue(parameterreturnValue.Value);
 
