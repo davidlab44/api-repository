@@ -20,7 +20,7 @@ namespace generalapi.Controllers
             _context = context;
         }
 
-        /*
+        
         // GET: api/APP_SP_DrugsDeliveryConsumerViewHeaderResult
         [HttpGet]
         public async Task<ActionResult<IEnumerable<APP_SP_DrugsDeliveryConsumerViewHeaderResult>>> GetAPP_SP_DrugsDeliveryConsumerViewHeaderResult()
@@ -38,9 +38,9 @@ namespace generalapi.Controllers
 
             //return await _context.APP_SP_DrugsDeliveryConsumerViewHeaderResult.ToListAsync();
         }
-        */
+        
 
-        /*
+        
         // GET: api/APP_SP_DrugsDeliveryConsumerViewHeaderResult/5
         [HttpGet("{id}")]
         public async Task<ActionResult<APP_SP_DrugsDeliveryConsumerViewHeaderResult>> GetAPP_SP_DrugsDeliveryConsumerViewHeaderResult(string id)
@@ -58,7 +58,7 @@ namespace generalapi.Controllers
 
             return aPP_SP_DrugsDeliveryConsumerViewHeaderResult;
         }
-        */
+        
         /*
         // PUT: api/APP_SP_DrugsDeliveryConsumerViewHeaderResult/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754

@@ -34,6 +34,8 @@ namespace generalapi.Models
 
         protected void OnModelCreatingGeneratedProcedures(ModelBuilder modelBuilder)
         {
+
+            /*
             modelBuilder.Entity<Activar_Comandas_efectivoResult>().HasNoKey().ToView(null);
             modelBuilder.Entity<APP_SP_DrugsDeliveryConsumerViewArticlesResult>().HasNoKey().ToView(null);
             modelBuilder.Entity<APP_SP_DrugsDeliveryConsumerViewHeaderResult>().HasNoKey().ToView(null);
@@ -838,6 +840,7 @@ namespace generalapi.Models
             modelBuilder.Entity<usp_proclientesResult>().HasNoKey().ToView(null);
             modelBuilder.Entity<usp_protercerosResult>().HasNoKey().ToView(null);
             modelBuilder.Entity<usp_RunScheduledJobResult>().HasNoKey().ToView(null);
+            */
         }
     }
 

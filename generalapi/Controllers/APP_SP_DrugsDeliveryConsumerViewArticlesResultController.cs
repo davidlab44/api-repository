@@ -21,7 +21,7 @@ namespace generalapi.Controllers
         {
             _context = context;
         }
-        /*
+        
         // GET: api/APP_SP_DrugsDeliveryConsumerViewArticlesResult
         [HttpGet]
         public async Task<ActionResult<IEnumerable<APP_SP_DrugsDeliveryConsumerViewArticlesResult>>> GetAPP_SP_DrugsDeliveryConsumerViewArticlesResult()
@@ -54,6 +54,8 @@ namespace generalapi.Controllers
             return aPP_SP_DrugsDeliveryConsumerViewArticlesResult;
         }
 
+
+        /*
         // PUT: api/APP_SP_DrugsDeliveryConsumerViewArticlesResult/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
@@ -84,8 +86,8 @@ namespace generalapi.Controllers
 
             return NoContent();
         }
-
         */
+        
 
 
 
