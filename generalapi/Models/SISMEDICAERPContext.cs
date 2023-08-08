@@ -18,55 +18,40 @@ namespace generalapi.Models
         {
         }
 
+        public virtual DbSet<GlappDrugsDeliveryConsumptionDet> GlappDrugsDeliveryConsumptionDets { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.UseCollation("SQL_1xCompat_CP850_CI_AS");
-            modelBuilder.Entity<APP_SP_DrugsDeliveryConsumerViewHeaderResult>(entity =>
-            {
-                entity.HasKey(e => e.License)
-                    .HasName("PK__products__1E5A0B8E2D96C866");
-                //entity.ToTable("acccccxc");
-                //entity.
-                entity.Property(e => e.License).HasColumnName("License");
-                /*
-                entity.Property(e => e.Consumer)
-                    .IsRequired()
-                    .HasMaxLength(255)
-                    .IsUnicode(false)
-                    .HasColumnName("Consumer");
-                */
-            });
 
-            modelBuilder.Entity<APP_SP_DrugsDeliveryConsumerViewArticlesResult>(entity =>
+            modelBuilder.Entity<GlappDrugsDeliveryConsumptionDet>(entity =>
             {
-                entity.HasKey(e => e.ArticleCode)
-                    .HasName("PK__products__1E5A0B8E2D96C866");
-                //entity.ToTable("acccccxc");
-                //entity.
-                entity.Property(e => e.ArticleCode).HasColumnName("ArticleCode");
-                /*
-                entity.Property(e => e.Consumer)
-                    .IsRequired()
-                    .HasMaxLength(255)
-                    .IsUnicode(false)
-                    .HasColumnName("Consumer");
-                */
-            });
+                entity.HasKey(e => e.ConsumptionDetailId)
+                    .HasName("PK_glapp_drugs_consumption_det_id");
 
-            modelBuilder.Entity<Consumible>(entity =>
-            {
-                entity.HasKey(e => e.ConsumptionID)
-                    .HasName("PK__products__1E5A0B8E2D96C866");
-                //entity.ToTable("acccccxc");
-                //entity.
-                entity.Property(e => e.ConsumptionID).HasColumnName("ConsumptionID");
-                /*
-                entity.Property(e => e.Consumer)
+                entity.ToTable("GlappDrugsDeliveryConsumptionDet");
+
+                entity.Property(e => e.ConsumptionDetailId).HasColumnName("ConsumptionDetailID");
+
+                entity.Property(e => e.ArticleCode)
                     .IsRequired()
-                    .HasMaxLength(255)
-                    .IsUnicode(false)
-                    .HasColumnName("Consumer");
-                */
+                    .HasMaxLength(100)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.ConsumptionId).HasColumnName("ConsumptionID");
+
+                entity.Property(e => e.CreationDate)
+                    .HasColumnType("datetime")
+                    .HasDefaultValueSql("(getdate())");
+
+                entity.Property(e => e.Delivered).HasColumnType("decimal(18, 0)");
+
+                entity.Property(e => e.Quantity).HasColumnType("decimal(18, 0)");
+
+                entity.Property(e => e.UnitOfMeasure)
+                    .IsRequired()
+                    .HasMaxLength(100)
+                    .IsUnicode(false);
             });
 
             OnModelCreatingGeneratedProcedures(modelBuilder);
@@ -74,11 +59,5 @@ namespace generalapi.Models
         }
 
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
-        public DbSet<generalapi.Models.APP_SP_DrugsDeliveryConsumerViewHeaderResult> APP_SP_DrugsDeliveryConsumerViewHeaderResult { get; set; }
-        public DbSet<generalapi.Models.APP_SP_DrugsDeliveryConsumerViewArticlesResult> APP_SP_DrugsDeliveryConsumerViewArticlesResult { get; set; }
-        public DbSet<generalapi.Models.Consumible> Consumible { get; set; }
-
-
-
     }
 }

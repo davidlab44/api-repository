@@ -35,9 +35,9 @@ namespace generalapi.Models
         protected void OnModelCreatingGeneratedProcedures(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Activar_Comandas_efectivoResult>().HasNoKey().ToView(null);
-            //modelBuilder.Entity<APP_SP_DrugsDeliveryConsumerViewArticlesResult>().HasNoKey().ToView(null);
-            //modelBuilder.Entity<APP_SP_DrugsDeliveryConsumerViewHeaderResult>().HasNoKey().ToView(null);
-            //modelBuilder.Entity<APP_SP_DrugsDeliveryConsumerViewSaveResult>().HasNoKey().ToView(null);
+            modelBuilder.Entity<APP_SP_DrugsDeliveryConsumerViewArticlesResult>().HasNoKey().ToView(null);
+            modelBuilder.Entity<APP_SP_DrugsDeliveryConsumerViewHeaderResult>().HasNoKey().ToView(null);
+            modelBuilder.Entity<APP_SP_DrugsDeliveryConsumerViewSaveResult>().HasNoKey().ToView(null);
             modelBuilder.Entity<busca_equivalencias_formulaResult>().HasNoKey().ToView(null);
             modelBuilder.Entity<busca_prefacturaResult>().HasNoKey().ToView(null);
             modelBuilder.Entity<consolidado_residuosResult>().HasNoKey().ToView(null);

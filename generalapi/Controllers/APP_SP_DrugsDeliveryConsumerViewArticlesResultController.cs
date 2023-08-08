@@ -21,7 +21,7 @@ namespace generalapi.Controllers
         {
             _context = context;
         }
-
+        /*
         // GET: api/APP_SP_DrugsDeliveryConsumerViewArticlesResult
         [HttpGet]
         public async Task<ActionResult<IEnumerable<APP_SP_DrugsDeliveryConsumerViewArticlesResult>>> GetAPP_SP_DrugsDeliveryConsumerViewArticlesResult()
@@ -85,6 +85,7 @@ namespace generalapi.Controllers
             return NoContent();
         }
 
+        */
 
 
 
@@ -93,8 +94,7 @@ namespace generalapi.Controllers
 
 
 
-
-
+        /*
 
         [HttpPost]
         //public IActionResult InsertConsumibles(List<generalapi.Models.Consumible> consumibles)
@@ -129,7 +129,7 @@ namespace generalapi.Controllers
                 return BadRequest("Error al insertar la lista de consumibles: " + ex.Message);
             }
         }
-
+        */
 
         /*
         private List<Models.Employee> SortEmployees(List<Models.Employee> employees)
@@ -194,7 +194,7 @@ namespace generalapi.Controllers
                 return NoContent();
             }
             */
-
+            /*
             // DELETE: api/APP_SP_DrugsDeliveryConsumerViewArticlesResult/5
             [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteAPP_SP_DrugsDeliveryConsumerViewArticlesResult(string id)
@@ -219,5 +219,6 @@ namespace generalapi.Controllers
         {
             return (_context.APP_SP_DrugsDeliveryConsumerViewArticlesResult?.Any(e => e.ArticleCode == id)).GetValueOrDefault();
         }
+        */
     }
 }
