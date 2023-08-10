@@ -15,6 +15,6 @@ namespace generalapi2.Models
         public DateTime CreationDate { get; set; }
         public decimal? Delivered { get; set; }
 
-        public virtual GlappDrugsDeliveryConsumption Consumption { get; set; }
+        //public virtual GlappDrugsDeliveryConsumption Consumption { get; set; }
     }
 }

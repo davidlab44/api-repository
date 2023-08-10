@@ -7,10 +7,12 @@ namespace generalapi2.Models
 {
     public partial class GlappDrugsDeliveryConsumption
     {
+        /*
         public GlappDrugsDeliveryConsumption()
         {
             GlappDrugsDeliveryConsumptionDets = new HashSet<GlappDrugsDeliveryConsumptionDet>();
         }
+        */
 
         public long ConsumptionId { get; set; }
         public string ConsumerUser { get; set; }
@@ -19,6 +21,6 @@ namespace generalapi2.Models
         public DateTime CreationDate { get; set; }
         public int? RestockId { get; set; }
 
-        public virtual ICollection<GlappDrugsDeliveryConsumptionDet> GlappDrugsDeliveryConsumptionDets { get; set; }
+        //public virtual ICollection<GlappDrugsDeliveryConsumptionDet> GlappDrugsDeliveryConsumptionDets { get; set; }
     }
 }

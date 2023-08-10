@@ -161,12 +161,13 @@ namespace generalapi2.Models
                     .IsRequired()
                     .HasMaxLength(100)
                     .IsUnicode(false);
-
+                /*
                 entity.HasOne(d => d.Consumption)
                     .WithMany(p => p.GlappDrugsDeliveryConsumptionDets)
                     .HasForeignKey(d => d.ConsumptionId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK__GlappDrug__Consu__325CDC32");
+                */
             });
 
             OnModelCreatingGeneratedProcedures(modelBuilder);
