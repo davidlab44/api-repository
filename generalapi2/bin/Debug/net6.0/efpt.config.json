@@ -1,0 +1,63 @@
+﻿{
+   "CodeGenerationMode": 2,
+   "ContextClassName": "SISMEDICAERPContext",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": null,
+   "OutputContextPath": null,
+   "OutputPath": "Models",
+   "PreserveCasingWithRegex": true,
+   "ProjectRootNamespace": "generalapi2",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 0,
+   "T4TemplatePath": null,
+   "Tables": [
+      {
+         "Name": "[dbo].[GlappDrugsDeliveryConfirmations]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GlappDrugsDeliveryConsumption]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GlappDrugsDeliveryConsumptionDet]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[APP_SP_DrugsDeliveryConsumerViewArticles]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[APP_SP_DrugsDeliveryConsumerViewHeader]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[APP_SP_DrugsDeliveryConsumerViewSave]",
+         "ObjectType": 1
+      }
+   ],
+   "UiHint": "desktop-36cfolr.SISMEDICAERP.dbo",
+   "UncountableWords": null,
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDateOnlyTimeOnly": false,
+   "UseDbContextSplitting": false,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": true,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UseSchemaFolders": false,
+   "UseSchemaNamespaces": false,
+   "UseSpatial": false,
+   "UseT4": false
+}
