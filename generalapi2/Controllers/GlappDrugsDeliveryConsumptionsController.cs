@@ -85,6 +85,8 @@ namespace generalapi2.Controllers
         [HttpPost]
         public async Task<ActionResult<GlappDrugsDeliveryConsumption>> PostGlappDrugsDeliveryConsumption(GlappDrugsDeliveryConsumption glappDrugsDeliveryConsumption)
         {
+            glappDrugsDeliveryConsumption.CreationDate = DateTime.Now;
+
           if (_context.GlappDrugsDeliveryConsumptions == null)
           {
               return Problem("Entity set 'SISMEDICAERPContext.GlappDrugsDeliveryConsumptions'  is null.");

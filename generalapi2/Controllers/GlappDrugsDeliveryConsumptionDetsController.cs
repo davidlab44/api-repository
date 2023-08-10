@@ -83,6 +83,25 @@ namespace generalapi2.Controllers
         // POST: api/GlappDrugsDeliveryConsumptionDets
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
+        //public async Task<ActionResult<GlappDrugsDeliveryConsumptionDet>> PostGlappDrugsDeliveryConsumptionDet(GlappDrugsDeliveryConsumptionDet glappDrugsDeliveryConsumptionDet)
+        public async Task<ActionResult<GlappDrugsDeliveryConsumptionDet>> PostGlappDrugsDeliveryConsumptionDet([FromBody] GlappDrugsDeliveryConsumptionDet[] jsonArray)
+        {
+            if (_context.GlappDrugsDeliveryConsumptionDets == null)
+            {
+                return Problem("Entity set 'SISMEDICAERPContext.GlappDrugsDeliveryConsumptionDets'  is null.");
+            }
+
+            foreach (var glappDrugsDeliveryConsumptionDet in jsonArray)
+            {
+                _context.GlappDrugsDeliveryConsumptionDets.Add(glappDrugsDeliveryConsumptionDet);
+                await _context.SaveChangesAsync();
+            }
+            var er = jsonArray;
+            return NoContent();
+            //return CreatedAtAction("GetGlappDrugsDeliveryConsumptionDet", new { id = glappDrugsDeliveryConsumptionDet.ConsumptionDetailId }, glappDrugsDeliveryConsumptionDet);
+        }
+        /*
+        [HttpPost]
         public async Task<ActionResult<GlappDrugsDeliveryConsumptionDet>> PostGlappDrugsDeliveryConsumptionDet(GlappDrugsDeliveryConsumptionDet glappDrugsDeliveryConsumptionDet)
         {
           if (_context.GlappDrugsDeliveryConsumptionDets == null)
@@ -94,6 +113,7 @@ namespace generalapi2.Controllers
 
             return CreatedAtAction("GetGlappDrugsDeliveryConsumptionDet", new { id = glappDrugsDeliveryConsumptionDet.ConsumptionDetailId }, glappDrugsDeliveryConsumptionDet);
         }
+        */
 
         // DELETE: api/GlappDrugsDeliveryConsumptionDets/5
         [HttpDelete("{id}")]
