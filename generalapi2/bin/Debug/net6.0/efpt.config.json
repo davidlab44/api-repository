@@ -16,27 +16,19 @@
    "T4TemplatePath": null,
    "Tables": [
       {
-         "Name": "[dbo].[GlappDrugsDeliveryConfirmations]",
-         "ObjectType": 0
-      },
-      {
-         "Name": "[dbo].[GlappDrugsDeliveryConsumption]",
-         "ObjectType": 0
-      },
-      {
-         "Name": "[dbo].[GlappDrugsDeliveryConsumptionDet]",
-         "ObjectType": 0
-      },
-      {
-         "Name": "[dbo].[APP_SP_DrugsDeliveryConsumerViewArticles]",
+         "Name": "[dbo].[Glapp_SP_DrugsDeliveryRestocks]",
          "ObjectType": 1
       },
       {
-         "Name": "[dbo].[APP_SP_DrugsDeliveryConsumerViewHeader]",
+         "Name": "[dbo].[Glapp_SP_DrugsDeliveryRestocksArticles]",
          "ObjectType": 1
       },
       {
-         "Name": "[dbo].[APP_SP_DrugsDeliveryConsumerViewSave]",
+         "Name": "[dbo].[Glapp_SP_DrugsDeliveryRestockSave]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[Glapp_SP_DrugsDeliveryRestocksHeader]",
          "ObjectType": 1
       }
    ],
