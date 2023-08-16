@@ -20,6 +20,20 @@ namespace generalapi2.Controllers
             _context = context;
         }
 
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<Glapp_SP_DrugsDeliveryRestocksArticlesResult>>> Glapp_SP_DrugsDeliveryRestocksArticlesResult()
+        {
+            if (_context.Glapp_SP_DrugsDeliveryRestocksArticlesResult == null)
+            {
+                return NotFound();
+            }
+            //return await _context.APP_SP_DrugsDeliveryConsumerViewArticlesResult.ToListAsync();
+            return _context.Glapp_SP_DrugsDeliveryRestocksArticlesResult
+                  .FromSqlRaw($"exec Glapp_SP_DrugsDeliveryRestocksArticles 'admin',1,'RESTOCK_REQUEST'")
+                  .ToList();
+        }
+
+        /*
         // GET: api/Glapp_SP_DrugsDeliveryRestocksArticlesResult
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Glapp_SP_DrugsDeliveryRestocksArticlesResult>>> GetGlapp_SP_DrugsDeliveryRestocksArticlesResult()
@@ -29,12 +43,10 @@ namespace generalapi2.Controllers
               return NotFound();
           }
             return await _context.Glapp_SP_DrugsDeliveryRestocksArticlesResult.ToListAsync();
-            /*
-            return _context.Glapp_SP_DrugsDeliveryRestocksArticlesResult
-                  .FromSqlRaw($"exec Glapp_SP_DrugsDeliveryRestocksArticlesResult 'admin'")
-                  .ToList();
-            */
         }
+        */
+
+
         /*
         // GET: api/Glapp_SP_DrugsDeliveryRestocksArticlesResult/5
         [HttpGet("{id}")]

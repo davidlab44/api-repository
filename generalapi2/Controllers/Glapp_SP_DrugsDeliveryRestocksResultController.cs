@@ -21,6 +21,10 @@ namespace generalapi2.Controllers
         }
 
 
+        /*
+        //BORRAR
+        //ESTO ESTA MALO ESTE NO ES EL GET DE RELOADABLE!!!!! esto es otra cosa 
+        //El Get es este Glapp_SP_DrugsDeliveryRestocksArticles
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Glapp_SP_DrugsDeliveryRestocksResult>>> Glapp_SP_DrugsDeliveryRestocksResult()
         {
@@ -33,6 +37,7 @@ namespace generalapi2.Controllers
                   .FromSqlRaw($"exec Glapp_SP_DrugsDeliveryRestocks 'admin',1,'RESTOCK_REQUEST'")
                   .ToList();
         }
+        */
 
 
         /*
