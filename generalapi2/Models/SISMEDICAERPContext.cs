@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using TemplateBorrar1.Models;
 
 namespace generalapi2.Models
 {
@@ -21,6 +22,8 @@ namespace generalapi2.Models
         public virtual DbSet<GlappDrugsDeliveryConfirmation> GlappDrugsDeliveryConfirmations { get; set; }
         public virtual DbSet<GlappDrugsDeliveryConsumption> GlappDrugsDeliveryConsumptions { get; set; }
         public virtual DbSet<GlappDrugsDeliveryConsumptionDet> GlappDrugsDeliveryConsumptionDets { get; set; }
+        public virtual DbSet<GlappDrugsDeliveryRestock> GlappDrugsDeliveryRestocks { get; set; }
+        public virtual DbSet<GlappDrugsDeliveryRestocksDet> GlappDrugsDeliveryRestocksDets { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -169,6 +172,106 @@ namespace generalapi2.Models
                     .HasConstraintName("FK__GlappDrug__Consu__325CDC32");
                 */
             });
+
+            modelBuilder.Entity<GlappDrugsDeliveryRestock>(entity =>
+            {
+                entity.HasKey(e => e.RestockId)
+                    .HasName("PK_glapp_drugs_restock_id");
+
+                entity.Property(e => e.RestockId).HasColumnName("RestockID");
+
+                entity.Property(e => e.ConfirmerUser)
+                    .HasMaxLength(100)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Consecutive)
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.CreationDate)
+                    .HasColumnType("datetime")
+                    .HasDefaultValueSql("(getdate())");
+
+                entity.Property(e => e.DeliveryConfirmationComments)
+                    .HasMaxLength(1000)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.DeliveryConfirmationDate).HasColumnType("datetime");
+
+                entity.Property(e => e.DeliveryConfirmationImageUrl)
+                    .HasMaxLength(200)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.ModifiedDate)
+                    .HasColumnType("datetime")
+                    .HasDefaultValueSql("(getdate())");
+
+                entity.Property(e => e.RestockerUser)
+                    .IsRequired()
+                    .HasMaxLength(100)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.SourceId)
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Status)
+                    .IsRequired()
+                    .HasMaxLength(20)
+                    .IsUnicode(false)
+                    .HasDefaultValueSql("('PENDING')");
+
+                entity.Property(e => e.Vehicle)
+                    .IsRequired()
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+            });
+
+            modelBuilder.Entity<GlappDrugsDeliveryRestocksDet>(entity =>
+            {
+                entity.HasKey(e => e.RestockDetailId)
+                    .HasName("PK_glapp_drugs_restock_det_id");
+
+                entity.ToTable("GlappDrugsDeliveryRestocksDet");
+
+                entity.Property(e => e.RestockDetailId).HasColumnName("RestockDetailID");
+
+                entity.Property(e => e.ArticleCode)
+                    .IsRequired()
+                    .HasMaxLength(100)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.CreationDate)
+                    .HasColumnType("datetime")
+                    .HasDefaultValueSql("(getdate())");
+
+                entity.Property(e => e.Delivered).HasColumnType("decimal(18, 0)");
+
+                entity.Property(e => e.Quantity).HasColumnType("decimal(18, 0)");
+
+                entity.Property(e => e.RestockId).HasColumnName("RestockID");
+
+                entity.Property(e => e.UnitOfMeasure)
+                    .IsRequired()
+                    .HasMaxLength(100)
+                    .IsUnicode(false);
+
+                entity.HasOne(d => d.Restock)
+                    .WithMany(p => p.GlappDrugsDeliveryRestocksDets)
+                    .HasForeignKey(d => d.RestockId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK__GlappDrug__Resto__3AF22233");
+            });
+
+
+
+
+
+
+
+
+
+            //STORED PROCEDURES
 
             modelBuilder.Entity<Glapp_SP_DrugsDeliveryRestocksArticlesResult>(entity =>
             {
