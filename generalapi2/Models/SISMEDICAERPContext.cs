@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
-using TemplateBorrar1.Models;
+//using TemplateBorrar1.Models;
 
 namespace generalapi2.Models
 {

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using TemplateBorrar1.Models;
+//using TemplateBorrar1.Models;
 using generalapi2.Models;
 
 namespace generalapi2.Controllers

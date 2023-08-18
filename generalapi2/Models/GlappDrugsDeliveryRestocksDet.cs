@@ -3,7 +3,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace TemplateBorrar1.Models
+namespace generalapi2.Models
 {
     public partial class GlappDrugsDeliveryRestocksDet
     {

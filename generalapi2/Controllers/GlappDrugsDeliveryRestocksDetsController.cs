@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using TemplateBorrar1.Models;
+//using TemplateBorrar1.Models;
 using generalapi2.Models;
 
 namespace generalapi2.Controllers
@@ -23,7 +23,7 @@ namespace generalapi2.Controllers
 
         // GET: api/GlappDrugsDeliveryRestocksDets
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<GlappDrugsDeliveryRestocksDet>>> GetGlappDrugsDeliveryRestocksDets()
+        public async Task<ActionResult<IEnumerable<generalapi2.Models.GlappDrugsDeliveryRestocksDet>>> GetGlappDrugsDeliveryRestocksDets()
         {
           if (_context.GlappDrugsDeliveryRestocksDets == null)
           {
