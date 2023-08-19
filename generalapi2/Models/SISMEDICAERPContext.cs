@@ -256,11 +256,13 @@ namespace generalapi2.Models
                     .HasMaxLength(100)
                     .IsUnicode(false);
 
+                /*
                 entity.HasOne(d => d.Restock)
                     .WithMany(p => p.GlappDrugsDeliveryRestocksDets)
                     .HasForeignKey(d => d.RestockId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK__GlappDrug__Resto__3AF22233");
+                */
             });
 
 
