@@ -22,25 +22,6 @@ namespace generalapi2.Controllers
 
 
         /*
-        //BORRAR
-        //ESTO ESTA MALO ESTE NO ES EL GET DE RELOADABLE!!!!! esto es otra cosa 
-        //El Get es este Glapp_SP_DrugsDeliveryRestocksArticles
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<Glapp_SP_DrugsDeliveryRestocksResult>>> Glapp_SP_DrugsDeliveryRestocksResult()
-        {
-            if (_context.Glapp_SP_DrugsDeliveryRestocksResult == null)
-            {
-                return NotFound();
-            }
-            //return await _context.APP_SP_DrugsDeliveryConsumerViewArticlesResult.ToListAsync();
-            return _context.Glapp_SP_DrugsDeliveryRestocksResult
-                  .FromSqlRaw($"exec Glapp_SP_DrugsDeliveryRestocks 'admin',1,'RESTOCK_REQUEST'")
-                  .ToList();
-        }
-        */
-
-
-        /*
         // GET: api/Glapp_SP_DrugsDeliveryRestocksResult
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Glapp_SP_DrugsDeliveryRestocksResult>>> GetGlapp_SP_DrugsDeliveryRestocksResult()
