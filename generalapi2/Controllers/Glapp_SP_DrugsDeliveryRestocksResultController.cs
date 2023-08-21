@@ -20,6 +20,18 @@ namespace generalapi2.Controllers
             _context = context;
         }
 
+        // GET: api/Glapp_SP_DrugsDeliveryRestocksResult
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<Glapp_SP_DrugsDeliveryRestocksResult>>> Glapp_SP_DrugsDeliveryRestocksResult()
+        {
+            if (_context.Glapp_SP_DrugsDeliveryRestocksResult == null)
+            {
+                return NotFound();
+            }
+            return _context.Glapp_SP_DrugsDeliveryRestocksResult
+                  .FromSqlRaw($"exec Glapp_SP_DrugsDeliveryRestocks 'admin',1,'TO_DELIVER'")
+                  .ToList();
+        }
 
         /*
         // GET: api/Glapp_SP_DrugsDeliveryRestocksResult
