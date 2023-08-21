@@ -139,19 +139,21 @@ namespace generalapi2.Models
 
             modelBuilder.Entity<GlappDrugsDeliveryConsumptionDet>(entity =>
             {
+                
                 entity.HasKey(e => e.ConsumptionDetailId)
                     .HasName("PK_glapp_drugs_consumption_det_id");
-
+                /*
                 entity.ToTable("GlappDrugsDeliveryConsumptionDet");
 
-                entity.Property(e => e.ConsumptionDetailId).HasColumnName("ConsumptionDetailID");
+
+                entity.Property(e => e.ConsumptionDetailId).HasColumnName("ConsumptionDetailId");
 
                 entity.Property(e => e.ArticleCode)
                     .IsRequired()
                     .HasMaxLength(100)
                     .IsUnicode(false);
 
-                entity.Property(e => e.ConsumptionId).HasColumnName("ConsumptionID");
+                entity.Property(e => e.ConsumptionId).HasColumnName("ConsumptionId");
 
                 entity.Property(e => e.CreationDate)
                     .HasColumnType("datetime")
@@ -165,6 +167,7 @@ namespace generalapi2.Models
                     .IsRequired()
                     .HasMaxLength(100)
                     .IsUnicode(false);
+                */
                 /*
                 entity.HasOne(d => d.Consumption)
                     .WithMany(p => p.GlappDrugsDeliveryConsumptionDets)
@@ -232,7 +235,7 @@ namespace generalapi2.Models
             {
                 entity.HasKey(e => e.RestockDetailId)
                     .HasName("PK_glapp_drugs_restock_det_id");
-
+                /*
                 entity.ToTable("GlappDrugsDeliveryRestocksDet");
 
                 entity.Property(e => e.RestockDetailId).HasColumnName("RestockDetailID");
@@ -256,7 +259,7 @@ namespace generalapi2.Models
                     .IsRequired()
                     .HasMaxLength(100)
                     .IsUnicode(false);
-
+                */
                 /*
                 entity.HasOne(d => d.Restock)
                     .WithMany(p => p.GlappDrugsDeliveryRestocksDets)

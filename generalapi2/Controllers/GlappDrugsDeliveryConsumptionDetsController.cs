@@ -19,6 +19,7 @@ namespace generalapi2.Controllers
         {
             _context = context;
         }
+        /*
 
         // GET: api/GlappDrugsDeliveryConsumptionDets
         [HttpGet]
@@ -100,6 +101,7 @@ namespace generalapi2.Controllers
             return NoContent();
             //return CreatedAtAction("GetGlappDrugsDeliveryConsumptionDet", new { id = glappDrugsDeliveryConsumptionDet.ConsumptionDetailId }, glappDrugsDeliveryConsumptionDet);
         }
+        */
         /*
         [HttpPost]
         public async Task<ActionResult<GlappDrugsDeliveryConsumptionDet>> PostGlappDrugsDeliveryConsumptionDet(GlappDrugsDeliveryConsumptionDet glappDrugsDeliveryConsumptionDet)
@@ -114,7 +116,7 @@ namespace generalapi2.Controllers
             return CreatedAtAction("GetGlappDrugsDeliveryConsumptionDet", new { id = glappDrugsDeliveryConsumptionDet.ConsumptionDetailId }, glappDrugsDeliveryConsumptionDet);
         }
         */
-
+        /*
         // DELETE: api/GlappDrugsDeliveryConsumptionDets/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteGlappDrugsDeliveryConsumptionDet(long id)
@@ -139,5 +141,6 @@ namespace generalapi2.Controllers
         {
             return (_context.GlappDrugsDeliveryConsumptionDets?.Any(e => e.ConsumptionDetailId == id)).GetValueOrDefault();
         }
+        */
     }
 }

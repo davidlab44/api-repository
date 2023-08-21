@@ -39,7 +39,6 @@ namespace generalapi2.Models
             modelBuilder.Entity<Glapp_SP_DrugsDeliveryRestocksArticlesResult>().HasNoKey().ToView(null);
             modelBuilder.Entity<Glapp_SP_DrugsDeliveryRestockSaveResult>().HasNoKey().ToView(null);
             modelBuilder.Entity<Glapp_SP_DrugsDeliveryRestocksHeaderResult>().HasNoKey().ToView(null);
-
             //modelBuilder.Entity<APP_SP_DrugsDeliveryConsumerViewSaveResult>().HasNoKey().ToView(null);
             //modelBuilder.Entity<Glapp_SP_DrugsDeliveryConfirmationResult>().HasNoKey().ToView(null);
 

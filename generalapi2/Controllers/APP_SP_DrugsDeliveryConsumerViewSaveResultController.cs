@@ -80,9 +80,71 @@ namespace generalapi2.Controllers
             return NoContent();
         }
 
+        /*
+        // POST: api/APP_SP_DrugsDeliveryConsumerViewSaveResult
+        [HttpPost]
+        public async Task<ActionResult<GlappDrugsDeliveryConsumptionDet>> PostGlappDrugsDeliveryConsumptionDet([FromBody] GlappDrugsDeliveryConsumptionDet[] jsonArray)
+        {
+            if (_context.GlappDrugsDeliveryConsumptionDets == null)
+            {
+                return Problem("Entity set 'SISMEDICAERPContext.GlappDrugsDeliveryConsumptionDets'  is null.");
+            }
+
+            foreach (var glappDrugsDeliveryConsumptionDet in jsonArray)
+            {
+                _context.GlappDrugsDeliveryConsumptionDets.Add(glappDrugsDeliveryConsumptionDet);
+                await _context.SaveChangesAsync();
+            }
+            var er = jsonArray;
+            return NoContent();
+            //return CreatedAtAction("GetGlappDrugsDeliveryConsumptionDet", new { id = glappDrugsDeliveryConsumptionDet.ConsumptionDetailId }, glappDrugsDeliveryConsumptionDet);
+        }
+        */
 
 
 
+        /*
+        
+        // POST: api/APP_SP_DrugsDeliveryConsumerViewSaveResult
+        [HttpPost]
+        public async Task<ActionResult<IEnumerable<APP_SP_DrugsDeliveryConsumerViewArticlesResult>>> PostAPP_SP_DrugsDeliveryConsumerViewSaveResult(string P_ConsumerUser, string P_Vehicle, [FromBody] GlappDrugsDeliveryConsumptionDet[] glappDrugsDeliveryConsumptionDet)
+        {
+            if (_context.APP_SP_DrugsDeliveryConsumerViewArticlesResult == null)
+            {
+                return NotFound();
+            }
+            //return await _context.APP_SP_DrugsDeliveryConsumerViewArticlesResult.ToListAsync();
+            
+                return _context.APP_SP_DrugsDeliveryConsumerViewArticlesResult
+                  .FromSqlRaw($" EXEC APP_SP_DrugsDeliveryConsumerViewSave 'ADMIN' , 'HFQ753' , '"+glappDrugsDeliveryConsumptionDet+"' ").ToList();
+        }
+        */
+
+
+
+        // POST: api/APP_SP_DrugsDeliveryConsumerViewSaveResult
+        [HttpPost]
+        public async Task<ActionResult<IEnumerable<Glapp_SP_DrugsDeliveryConfirmationResult>>> PostAPP_SP_DrugsDeliveryConsumerViewSaveResult(string P_ConsumerUser, string P_Vehicle, [FromBody] GlappDrugsDeliveryConsumptionDet[] glappDrugsDeliveryConsumptionDet)
+        {
+            if (_context.Glapp_SP_DrugsDeliveryConfirmationResult == null)
+            {
+                return NotFound();
+            }
+            //return await _context.APP_SP_DrugsDeliveryConsumerViewArticlesResult.ToListAsync();
+
+            return _context.Glapp_SP_DrugsDeliveryConfirmationResult
+              .FromSqlRaw($" EXEC APP_SP_DrugsDeliveryConsumerViewSave 'ADMIN' , 'HFQ753' , '" + glappDrugsDeliveryConsumptionDet + "' ").ToList();
+        }
+
+
+
+
+
+
+
+
+
+        /*
         // POST: api/APP_SP_DrugsDeliveryConsumerViewSaveResult
         [HttpPost]
         public async Task<ActionResult<APP_SP_DrugsDeliveryConsumerViewSaveResult>> PostAPP_SP_DrugsDeliveryConsumerViewSaveResult(APP_SP_DrugsDeliveryConsumerViewSaveResult aPP_SP_DrugsDeliveryConsumerViewSaveResult)
@@ -115,6 +177,7 @@ namespace generalapi2.Controllers
             //return _context.APP_SP_DrugsDeliveryConsumerViewSaveResult;
             //return NoContent();
         }
+        */
 
 
         /*
