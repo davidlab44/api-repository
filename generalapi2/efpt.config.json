@@ -28,8 +28,12 @@
          "ObjectType": 1
       },
       {
-         "Name": "[dbo].[Glapp_SP_DrugsDeliveryRestocksHeader]",
-         "ObjectType": 1
+        "Name": "[dbo].[Glapp_SP_DrugsDeliveryRestocksHeader]",
+        "ObjectType": 1
+      },
+      {
+        "Name": "[dbo].[Glapp_SP_DrugsDeliveryConfirmation]",
+        "ObjectType": 1
       }
    ],
    "UiHint": "desktop-36cfolr.SISMEDICAERP.dbo",

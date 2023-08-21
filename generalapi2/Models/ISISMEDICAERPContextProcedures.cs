@@ -18,5 +18,6 @@ namespace generalapi2.Models
         Task<List<Glapp_SP_DrugsDeliveryRestocksArticlesResult>> Glapp_SP_DrugsDeliveryRestocksArticlesAsync(string P_User, long? P_RestockID, string P_View, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
         Task<List<Glapp_SP_DrugsDeliveryRestockSaveResult>> Glapp_SP_DrugsDeliveryRestockSaveAsync(long? P_RestockID, string P_RestockerUser, string P_Vehicle, string P_DrugsRestockDetail, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
         Task<List<Glapp_SP_DrugsDeliveryRestocksHeaderResult>> Glapp_SP_DrugsDeliveryRestocksHeaderAsync(string P_User, long? P_RestockID, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
+        Task<List<Glapp_SP_DrugsDeliveryConfirmationResult>> Glapp_SP_DrugsDeliveryConfirmationAsync(long? P_RestockID, string P_User, string P_Vehicle, string P_DeliveryConfirmationImageUrl, string P_DeliveryConfirmationComments, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
     }
 }

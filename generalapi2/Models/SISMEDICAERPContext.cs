@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 //using TemplateBorrar1.Models;
+//using TemplateBorrar1.Models;
 
 namespace generalapi2.Models
 {
@@ -348,6 +349,22 @@ namespace generalapi2.Models
                 */
             });
 
+            modelBuilder.Entity<Glapp_SP_DrugsDeliveryConfirmationResult>(entity =>
+            {
+                //entity.HasNoKey();
+                entity.HasKey(e => e.MENSAJE).HasName("PK__products__1E5A0B8E2D96C866");
+                //entity.ToTable("acccccxc");
+                //entity.
+                //entity.Property(e => e.RestockID).HasColumnName("RestockID");
+                /*
+                entity.Property(e => e.Consumer)
+                    .IsRequired()
+                    .HasMaxLength(255)
+                    .IsUnicode(false)
+                    .HasColumnName("Consumer");
+                */
+            });
+
             OnModelCreatingGeneratedProcedures(modelBuilder);
             OnModelCreatingPartial(modelBuilder);
         }
@@ -357,6 +374,7 @@ namespace generalapi2.Models
         public DbSet<generalapi2.Models.APP_SP_DrugsDeliveryConsumerViewArticlesResult> APP_SP_DrugsDeliveryConsumerViewArticlesResult { get; set; }
         public DbSet<generalapi2.Models.APP_SP_DrugsDeliveryConsumerViewHeaderResult> APP_SP_DrugsDeliveryConsumerViewHeaderResult { get; set; }
         public DbSet<generalapi2.Models.APP_SP_DrugsDeliveryConsumerViewSaveResult> APP_SP_DrugsDeliveryConsumerViewSaveResult { get; set; }
+        public DbSet<generalapi2.Models.Glapp_SP_DrugsDeliveryConfirmationResult> Glapp_SP_DrugsDeliveryConfirmationResult { get; set; }
 
         
 

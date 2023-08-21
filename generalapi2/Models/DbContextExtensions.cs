@@ -52,7 +52,7 @@ namespace generalapi2.Models
         {
             _valueSet = true;
 
-            _value = null == value || Convert.IsDBNull(value) ? default(TValue) : (TValue)value;
+            _value = null == value || Convert.IsDBNull(value) ? default : (TValue)value;
         }
     }
 }

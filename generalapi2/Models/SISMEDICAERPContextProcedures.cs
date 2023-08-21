@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Threading;
 using System.Threading.Tasks;
+//using TemplateBorrar1.Models;
 
 namespace generalapi2.Models
 {
@@ -38,7 +39,8 @@ namespace generalapi2.Models
             modelBuilder.Entity<Glapp_SP_DrugsDeliveryRestocksArticlesResult>().HasNoKey().ToView(null);
             modelBuilder.Entity<Glapp_SP_DrugsDeliveryRestockSaveResult>().HasNoKey().ToView(null);
             modelBuilder.Entity<Glapp_SP_DrugsDeliveryRestocksHeaderResult>().HasNoKey().ToView(null);
-            
+            //modelBuilder.Entity<Glapp_SP_DrugsDeliveryConfirmationResult>().HasNoKey().ToView(null);
+
         }
     }
 
@@ -292,6 +294,61 @@ namespace generalapi2.Models
                 parameterreturnValue,
             };
             var _ = await _context.SqlQueryAsync<APP_SP_DrugsDeliveryConsumerViewSaveResult>("EXEC @returnValue = [dbo].[APP_SP_DrugsDeliveryConsumerViewSave] @P_ConsumerUser, @P_Vehicle", sqlParameters, cancellationToken);
+
+            returnValue?.SetValue(parameterreturnValue.Value);
+
+            return _;
+        }
+
+
+        public virtual async Task<List<Glapp_SP_DrugsDeliveryConfirmationResult>> Glapp_SP_DrugsDeliveryConfirmationAsync(long? P_RestockID, string P_User, string P_Vehicle, string P_DeliveryConfirmationImageUrl, string P_DeliveryConfirmationComments, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
+        {
+            var parameterreturnValue = new SqlParameter
+            {
+                ParameterName = "returnValue",
+                Direction = System.Data.ParameterDirection.Output,
+                SqlDbType = System.Data.SqlDbType.Int,
+            };
+
+            var sqlParameters = new[]
+            {
+                new SqlParameter
+                {
+                    ParameterName = "P_RestockID",
+                    Value = P_RestockID ?? Convert.DBNull,
+                    SqlDbType = System.Data.SqlDbType.BigInt,
+                },
+                new SqlParameter
+                {
+                    ParameterName = "P_User",
+                    Size = 100,
+                    Value = P_User ?? Convert.DBNull,
+                    SqlDbType = System.Data.SqlDbType.VarChar,
+                },
+                new SqlParameter
+                {
+                    ParameterName = "P_Vehicle",
+                    Size = 100,
+                    Value = P_Vehicle ?? Convert.DBNull,
+                    SqlDbType = System.Data.SqlDbType.VarChar,
+                },
+                new SqlParameter
+                {
+                    ParameterName = "P_DeliveryConfirmationImageUrl",
+                    Size = 200,
+                    Value = P_DeliveryConfirmationImageUrl ?? Convert.DBNull,
+                    SqlDbType = System.Data.SqlDbType.VarChar,
+                },
+                new SqlParameter
+                {
+                    ParameterName = "P_DeliveryConfirmationComments",
+                    Size = 1000,
+                    Value = P_DeliveryConfirmationComments ?? Convert.DBNull,
+                    SqlDbType = System.Data.SqlDbType.VarChar,
+                },
+                parameterreturnValue,
+            };
+            var _ = await _context.SqlQueryAsync<Glapp_SP_DrugsDeliveryConfirmationResult>("EXEC @returnValue = [dbo].[Glapp_SP_DrugsDeliveryConfirmation] @P_RestockID, @P_User, @P_Vehicle, @P_DeliveryConfirmationImageUrl, @P_DeliveryConfirmationComments", sqlParameters, cancellationToken);
 
             returnValue?.SetValue(parameterreturnValue.Value);
 
