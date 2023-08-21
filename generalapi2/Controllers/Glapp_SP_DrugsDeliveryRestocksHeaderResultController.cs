@@ -81,7 +81,6 @@ namespace generalapi2.Controllers
         }
 
         // POST: api/Glapp_SP_DrugsDeliveryRestocksHeaderResult
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<Glapp_SP_DrugsDeliveryRestocksHeaderResult>> PostGlapp_SP_DrugsDeliveryRestocksHeaderResult(Glapp_SP_DrugsDeliveryRestocksHeaderResult glapp_SP_DrugsDeliveryRestocksHeaderResult)
         {

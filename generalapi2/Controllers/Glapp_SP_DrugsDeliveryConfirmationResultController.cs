@@ -20,6 +20,9 @@ namespace generalapi2.Controllers
             _context = context;
         }
 
+
+
+        /*
         // GET: api/Glapp_SP_DrugsDeliveryConfirmationResult
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Glapp_SP_DrugsDeliveryConfirmationResult>>> GetGlapp_SP_DrugsDeliveryConfirmationResult()
@@ -133,5 +136,6 @@ namespace generalapi2.Controllers
         {
             return (_context.Glapp_SP_DrugsDeliveryConfirmationResult?.Any(e => e.MENSAJE == id)).GetValueOrDefault();
         }
+        */
     }
 }

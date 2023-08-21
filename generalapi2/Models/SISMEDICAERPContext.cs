@@ -335,8 +335,8 @@ namespace generalapi2.Models
 
             modelBuilder.Entity<APP_SP_DrugsDeliveryConsumerViewSaveResult>(entity =>
             {
-                entity.HasNoKey();
-                //entity.HasKey(e => e.RestockID).HasName("PK__products__1E5A0B8E2D96C866");
+                //entity.HasNoKey();
+                entity.HasKey(e => e.P_DrugsConsumptionDetail).HasName("PK__products__1E5A0B8E2D96C866");
                 //entity.ToTable("acccccxc");
                 //entity.
                 //entity.Property(e => e.RestockID).HasColumnName("RestockID");
@@ -375,8 +375,6 @@ namespace generalapi2.Models
         public DbSet<generalapi2.Models.APP_SP_DrugsDeliveryConsumerViewHeaderResult> APP_SP_DrugsDeliveryConsumerViewHeaderResult { get; set; }
         public DbSet<generalapi2.Models.APP_SP_DrugsDeliveryConsumerViewSaveResult> APP_SP_DrugsDeliveryConsumerViewSaveResult { get; set; }
         public DbSet<generalapi2.Models.Glapp_SP_DrugsDeliveryConfirmationResult> Glapp_SP_DrugsDeliveryConfirmationResult { get; set; }
-
-        
 
 
 

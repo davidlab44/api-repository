@@ -13,7 +13,7 @@ namespace generalapi2.Models
     {
         Task<List<APP_SP_DrugsDeliveryConsumerViewArticlesResult>> APP_SP_DrugsDeliveryConsumerViewArticlesAsync(string P_User, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
         Task<List<APP_SP_DrugsDeliveryConsumerViewHeaderResult>> APP_SP_DrugsDeliveryConsumerViewHeaderAsync(string P_User, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
-        Task<List<APP_SP_DrugsDeliveryConsumerViewSaveResult>> APP_SP_DrugsDeliveryConsumerViewSaveAsync(string P_ConsumerUser, string P_Vehicle, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
+        Task<List<APP_SP_DrugsDeliveryConsumerViewSaveResult>> APP_SP_DrugsDeliveryConsumerViewSaveAsync(string P_ConsumerUser, string P_Vehicle, string P_DrugsConsumptionDetail, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
         Task<List<Glapp_SP_DrugsDeliveryRestocksResult>> Glapp_SP_DrugsDeliveryRestocksAsync(string P_User, long? P_RestockID, string P_RestockStatus, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
         Task<List<Glapp_SP_DrugsDeliveryRestocksArticlesResult>> Glapp_SP_DrugsDeliveryRestocksArticlesAsync(string P_User, long? P_RestockID, string P_View, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
         Task<List<Glapp_SP_DrugsDeliveryRestockSaveResult>> Glapp_SP_DrugsDeliveryRestockSaveAsync(long? P_RestockID, string P_RestockerUser, string P_Vehicle, string P_DrugsRestockDetail, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);

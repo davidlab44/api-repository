@@ -39,6 +39,8 @@ namespace generalapi2.Models
             modelBuilder.Entity<Glapp_SP_DrugsDeliveryRestocksArticlesResult>().HasNoKey().ToView(null);
             modelBuilder.Entity<Glapp_SP_DrugsDeliveryRestockSaveResult>().HasNoKey().ToView(null);
             modelBuilder.Entity<Glapp_SP_DrugsDeliveryRestocksHeaderResult>().HasNoKey().ToView(null);
+
+            //modelBuilder.Entity<APP_SP_DrugsDeliveryConsumerViewSaveResult>().HasNoKey().ToView(null);
             //modelBuilder.Entity<Glapp_SP_DrugsDeliveryConfirmationResult>().HasNoKey().ToView(null);
 
         }
@@ -47,6 +49,8 @@ namespace generalapi2.Models
     public partial class SISMEDICAERPContextProcedures : ISISMEDICAERPContextProcedures
     {
         private readonly SISMEDICAERPContext _context;
+
+        public object? P_DrugsConsumptionDetail { get; private set; }
 
         public SISMEDICAERPContextProcedures(SISMEDICAERPContext context)
         {
@@ -266,7 +270,7 @@ namespace generalapi2.Models
             return _;
         }
 
-        public virtual async Task<List<APP_SP_DrugsDeliveryConsumerViewSaveResult>> APP_SP_DrugsDeliveryConsumerViewSaveAsync(string P_ConsumerUser, string P_Vehicle, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
+        public virtual async Task<List<APP_SP_DrugsDeliveryConsumerViewSaveResult>> APP_SP_DrugsDeliveryConsumerViewSaveAsync(string P_ConsumerUser, string P_Vehicle, string P_DrugsConsumptionDetail, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
         {
             var parameterreturnValue = new SqlParameter
             {
@@ -291,9 +295,16 @@ namespace generalapi2.Models
                     Value = P_Vehicle ?? Convert.DBNull,
                     SqlDbType = System.Data.SqlDbType.VarChar,
                 },
+                new SqlParameter
+                {
+                    ParameterName = "P_DrugsConsumptionDetail",
+                    Size = 1000,
+                    Value = P_DrugsConsumptionDetail ?? Convert.DBNull,
+                    SqlDbType = System.Data.SqlDbType.VarChar,
+                },
                 parameterreturnValue,
             };
-            var _ = await _context.SqlQueryAsync<APP_SP_DrugsDeliveryConsumerViewSaveResult>("EXEC @returnValue = [dbo].[APP_SP_DrugsDeliveryConsumerViewSave] @P_ConsumerUser, @P_Vehicle", sqlParameters, cancellationToken);
+            var _ = await _context.SqlQueryAsync<APP_SP_DrugsDeliveryConsumerViewSaveResult>("EXEC @returnValue = [dbo].[APP_SP_DrugsDeliveryConsumerViewSave] @P_ConsumerUser, @P_Vehicle, @P_DrugsConsumptionDetail", sqlParameters, cancellationToken);
 
             returnValue?.SetValue(parameterreturnValue.Value);
 
