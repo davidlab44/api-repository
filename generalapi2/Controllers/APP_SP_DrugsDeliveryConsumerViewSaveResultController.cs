@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using generalapi2.Models;
+using Newtonsoft.Json.Linq;
+using Newtonsoft.Json;
 
 namespace generalapi2.Controllers
 {
@@ -80,19 +82,45 @@ namespace generalapi2.Controllers
             return NoContent();
         }
 
+
+
         // POST: api/APP_SP_DrugsDeliveryConsumerViewSaveResult
         [HttpPost]
-        public async Task<ActionResult<IEnumerable<APP_SP_DrugsDeliveryConsumerViewSaveResult2>>> PostAPP_SP_DrugsDeliveryConsumerViewSaveResult(string P_ConsumerUser, string P_Vehicle, [FromBody] GlappDrugsDeliveryConsumptionDet[] glappDrugsDeliveryConsumptionDet)
+        //public async Task<ActionResult<IEnumerable<APP_SP_DrugsDeliveryConsumerViewSaveResult2>>> PostAPP_SP_DrugsDeliveryConsumerViewSaveResult(string P_ConsumerUser, string P_Vehicle, [FromBody] GlappDrugsDeliveryConsumptionDet[] glappDrugsDeliveryConsumptionDet)
+        public async Task<ActionResult<IEnumerable<APP_SP_DrugsDeliveryConsumerViewSaveResult2>>> PostAPP_SP_DrugsDeliveryConsumerViewSaveResult(string P_ConsumerUser, string P_Vehicle, string glappDrugsDeliveryConsumptionDet)
         {
             if (_context.APP_SP_DrugsDeliveryConsumerViewSaveResult2 == null)
             {
                 return NotFound();
             }
             //return await _context.APP_SP_DrugsDeliveryConsumerViewArticlesResult.ToListAsync();
-
+            //JObject json = JObject.Parse(glappDrugsDeliveryConsumptionDet.ToString());
+            //List<String> foos = JsonConvert.DeserializeObject<List<GlappDrugsDeliveryConsumptionDet>>(glappDrugsDeliveryConsumptionDet.ToString());
             return _context.APP_SP_DrugsDeliveryConsumerViewSaveResult2
-              .FromSqlRaw($" EXEC APP_SP_DrugsDeliveryConsumerViewSave 'ADMIN' , 'HFQ753' , '" + glappDrugsDeliveryConsumptionDet + "' ").ToList();
+              .FromSqlRaw($" EXEC APP_SP_DrugsDeliveryConsumerViewSave 'ADMIN' , 'HFQ753' , '" + glappDrugsDeliveryConsumptionDet+ "' ").ToList();
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         /*
