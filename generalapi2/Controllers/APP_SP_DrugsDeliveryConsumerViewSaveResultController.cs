@@ -125,12 +125,7 @@ namespace generalapi2.Controllers
             {
                 return NotFound();
             }
-            //var serialized = JsonConvert.SerializeObject(glappDrugsDeliveryConsumptionDet);
-            //var jsonObject = JArray.Parse(glappDrugsDeliveryConsumptionDet.ToString());
-
-            //var serializado = JObject.Parse(glappDrugsDeliveryConsumptionDet.ToString());//no se dejo convertir a json 
-            //string serializado = JsonConvert.SerializeObject(glappDrugsDeliveryConsumptionDet);
-            
+           
             /*
             List<GlappDrugsDeliveryConsumptionDet> lista = new List<GlappDrugsDeliveryConsumptionDet>(); ;
             foreach (var consum in glappDrugsDeliveryConsumptionDet)
@@ -139,27 +134,11 @@ namespace generalapi2.Controllers
             }
             */
             
-
-            //var json = JArray.FromObject(lista); //closer
-            //var json = JArray.FromObject(glappDrugsDeliveryConsumptionDet); //closer
-            //var json =  JsonConvert.SerializeObject(lista);
-            //var json =  JsonConvert.SerializeObject(lista);
-            //[{"consumptionDetailId":0,"consumptionId":20150,"articleCode":"INS-MED-016","quantity":1,"unitOfMeasure":"UND","creationDate":"2023-08-21T10:27:06.154","delivered":0}]
-            
-            //Console.WriteLine(jsonObject2.ToString());
-            //return await _context.APP_SP_DrugsDeliveryConsumerViewArticlesResult.ToListAsync();
-            //JObject json = JObject.Parse(glappDrugsDeliveryConsumptionDet.ToString());
-            //List<String> foos = JsonConvert.DeserializeObject<List<GlappDrugsDeliveryConsumptionDet>>(glappDrugsDeliveryConsumptionDet.ToString());
-
-            //return _context.APP_SP_DrugsDeliveryConsumerViewSaveResult2
-            // .FromSqlRaw($" EXEC APP_SP_DrugsDeliveryConsumerViewSave 'ADMIN' , 'HFQ753' , '"+ glappDrugsDeliveryConsumptionDet+"' ").ToList();
-
             return _context.APP_SP_DrugsDeliveryConsumerViewSaveResult2
               .FromSqlRaw($" EXEC APP_SP_DrugsDeliveryConsumerViewSave 'ADMIN', 'HFQ753','"+ glappDrugsDeliveryConsumptionDet.ToJsonString().Replace("{","{{").Replace("}","}}") + "' ").ToList();
         }
 
         
-
 
 
 
