@@ -333,6 +333,22 @@ namespace generalapi2.Models
                 */
             });
 
+            modelBuilder.Entity<Glapp_SP_DrugsDeliveryRestockSaveResult>(entity =>
+            {
+                //entity.HasNoKey();
+                entity.HasKey(e => e.P_ConsumerUser).HasName("PK__products__1E5A0B8E2D96C866");
+                //entity.ToTable("acccccxc");
+                //entity.
+                //entity.Property(e => e.RestockID).HasColumnName("RestockID");
+                /*
+                entity.Property(e => e.Consumer)
+                    .IsRequired()
+                    .HasMaxLength(255)
+                    .IsUnicode(false)
+                    .HasColumnName("Consumer");
+                */
+            });
+
             modelBuilder.Entity<APP_SP_DrugsDeliveryConsumerViewSaveResult>(entity =>
             {
                 //entity.HasNoKey();
@@ -365,12 +381,30 @@ namespace generalapi2.Models
                 */
             });
 
+            modelBuilder.Entity<Glapp_SP_DrugsDeliveryRestockSaveResult2>(entity =>
+            {
+                //entity.HasNoKey();
+                entity.HasKey(e => e.MENSAJE).HasName("PK__products__1E5A0B8E2D96C866");
+                //entity.ToTable("acccccxc");
+                //entity.
+                //entity.Property(e => e.RestockID).HasColumnName("RestockID");
+                /*
+                entity.Property(e => e.Consumer)
+                    .IsRequired()
+                    .HasMaxLength(255)
+                    .IsUnicode(false)
+                    .HasColumnName("Consumer");
+                */
+            });
+
             OnModelCreatingGeneratedProcedures(modelBuilder);
             OnModelCreatingPartial(modelBuilder);
         }
         public DbSet<generalapi2.Models.Glapp_SP_DrugsDeliveryRestocksArticlesResult> Glapp_SP_DrugsDeliveryRestocksArticlesResult { get; set; }
         public DbSet<generalapi2.Models.Glapp_SP_DrugsDeliveryRestocksHeaderResult> Glapp_SP_DrugsDeliveryRestocksHeaderResult { get; set; }
         public DbSet<generalapi2.Models.Glapp_SP_DrugsDeliveryRestocksResult> Glapp_SP_DrugsDeliveryRestocksResult { get; set; }
+        public DbSet<generalapi2.Models.Glapp_SP_DrugsDeliveryRestockSaveResult> Glapp_SP_DrugsDeliveryRestockSaveResult { get; set; }
+        public DbSet<generalapi2.Models.Glapp_SP_DrugsDeliveryRestockSaveResult2> Glapp_SP_DrugsDeliveryRestockSaveResult2 { get; set; }
         public DbSet<generalapi2.Models.APP_SP_DrugsDeliveryConsumerViewArticlesResult> APP_SP_DrugsDeliveryConsumerViewArticlesResult { get; set; }
         public DbSet<generalapi2.Models.APP_SP_DrugsDeliveryConsumerViewHeaderResult> APP_SP_DrugsDeliveryConsumerViewHeaderResult { get; set; }
         public DbSet<generalapi2.Models.APP_SP_DrugsDeliveryConsumerViewSaveResult> APP_SP_DrugsDeliveryConsumerViewSaveResult { get; set; }

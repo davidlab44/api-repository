@@ -37,7 +37,7 @@ namespace generalapi2.Models
             
             modelBuilder.Entity<Glapp_SP_DrugsDeliveryRestocksResult>().HasNoKey().ToView(null);
             modelBuilder.Entity<Glapp_SP_DrugsDeliveryRestocksArticlesResult>().HasNoKey().ToView(null);
-            modelBuilder.Entity<Glapp_SP_DrugsDeliveryRestockSaveResult>().HasNoKey().ToView(null);
+            //modelBuilder.Entity<Glapp_SP_DrugsDeliveryRestockSaveResult>().HasNoKey().ToView(null);
             modelBuilder.Entity<Glapp_SP_DrugsDeliveryRestocksHeaderResult>().HasNoKey().ToView(null);
 
             //modelBuilder.Entity<APP_SP_DrugsDeliveryConsumerViewSaveResult>().HasNoKey().ToView(null);
@@ -364,6 +364,11 @@ namespace generalapi2.Models
             returnValue?.SetValue(parameterreturnValue.Value);
 
             return _;
+        }
+
+        public Task<List<Glapp_SP_DrugsDeliveryRestockSaveResult2>> Glapp_SP_DrugsDeliveryRestockSaveAsync(long? P_RestockID, string P_User, string P_Vehicle, string P_DeliveryConfirmationImageUrl, string P_DeliveryConfirmationComments, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
+        {
+            throw new NotImplementedException();
         }
 
         /*
