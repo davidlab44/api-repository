@@ -139,29 +139,29 @@ namespace generalapi2.Models
 
             modelBuilder.Entity<GlappDrugsDeliveryConsumptionDet>(entity =>
             {
-                entity.HasKey(e => e.ConsumptionDetailId)
+                entity.HasKey(e => e.consumptionDetailId)
                     .HasName("PK_glapp_drugs_consumption_det_id");
 
                 entity.ToTable("GlappDrugsDeliveryConsumptionDet");
 
-                entity.Property(e => e.ConsumptionDetailId).HasColumnName("ConsumptionDetailID");
+                entity.Property(e => e.consumptionDetailId).HasColumnName("ConsumptionDetailID");
 
-                entity.Property(e => e.ArticleCode)
+                entity.Property(e => e.articleCode)
                     .IsRequired()
                     .HasMaxLength(100)
                     .IsUnicode(false);
 
-                entity.Property(e => e.ConsumptionId).HasColumnName("ConsumptionID");
+                entity.Property(e => e.consumptionId).HasColumnName("ConsumptionID");
 
-                entity.Property(e => e.CreationDate)
+                entity.Property(e => e.creationDate)
                     .HasColumnType("datetime")
                     .HasDefaultValueSql("(getdate())");
 
-                entity.Property(e => e.Delivered).HasColumnType("decimal(18, 0)");
+                entity.Property(e => e.delivered).HasColumnType("decimal(18, 0)");
 
-                entity.Property(e => e.Quantity).HasColumnType("decimal(18, 0)");
+                entity.Property(e => e.quantity).HasColumnType("decimal(18, 0)");
 
-                entity.Property(e => e.UnitOfMeasure)
+                entity.Property(e => e.unitOfMeasure)
                     .IsRequired()
                     .HasMaxLength(100)
                     .IsUnicode(false);

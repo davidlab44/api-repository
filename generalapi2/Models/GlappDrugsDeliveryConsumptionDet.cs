@@ -6,14 +6,12 @@ namespace generalapi2.Models
 {
     public partial class GlappDrugsDeliveryConsumptionDet
     {
-        public long ConsumptionDetailId { get; set; }
-        public long ConsumptionId { get; set; }
-        public string ArticleCode { get; set; }
-        public decimal Quantity { get; set; }
-        public string UnitOfMeasure { get; set; }
-        public DateTime CreationDate { get; set; }
-        public decimal? Delivered { get; set; }
-
-        //public virtual GlappDrugsDeliveryConsumption Consumption { get; set; }
+        public long consumptionDetailId { get; set; }
+        public long consumptionId { get; set; }
+        public string articleCode { get; set; }
+        public int quantity { get; set; }
+        public string unitOfMeasure { get; set; }
+        public DateTime creationDate { get; set; }
+        public int? delivered { get; set; }
     }
 }

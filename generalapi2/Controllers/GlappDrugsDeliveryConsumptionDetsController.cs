@@ -49,6 +49,8 @@ namespace generalapi2.Controllers
             return glappDrugsDeliveryConsumptionDet;
         }
 
+
+        /*
         // PUT: api/GlappDrugsDeliveryConsumptionDets/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
@@ -79,6 +81,7 @@ namespace generalapi2.Controllers
 
             return NoContent();
         }
+        */
 
         // POST: api/GlappDrugsDeliveryConsumptionDets
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
@@ -134,10 +137,11 @@ namespace generalapi2.Controllers
 
             return NoContent();
         }
-
+        /*
         private bool GlappDrugsDeliveryConsumptionDetExists(long id)
         {
             return (_context.GlappDrugsDeliveryConsumptionDets?.Any(e => e.ConsumptionDetailId == id)).GetValueOrDefault();
         }
+        */
     }
 }
