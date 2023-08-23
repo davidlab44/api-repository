@@ -365,14 +365,86 @@ namespace generalapi2.Models
 
             return _;
         }
-        
+
+        /*
+        public virtual async Task<List<Glapp_SP_DrugsDeliveryConfirmationResult>> Glapp_SP_DrugsDeliveryConfirmationAsync(long? P_RestockID, string P_User, string P_Vehicle, string P_DeliveryConfirmationImageUrl, string P_DeliveryConfirmationComments, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
+        {
+            var parameterreturnValue = new SqlParameter
+            {
+                ParameterName = "returnValue",
+                Direction = System.Data.ParameterDirection.Output,
+                SqlDbType = System.Data.SqlDbType.Int,
+            };
+
+            var sqlParameters = new[]
+            {
+                new SqlParameter
+                {
+                    ParameterName = "P_RestockID",
+                    Value = P_RestockID ?? Convert.DBNull,
+                    SqlDbType = System.Data.SqlDbType.BigInt,
+                },
+                new SqlParameter
+                {
+                    ParameterName = "P_User",
+                    Size = 100,
+                    Value = P_User ?? Convert.DBNull,
+                    SqlDbType = System.Data.SqlDbType.VarChar,
+                },
+                new SqlParameter
+                {
+                    ParameterName = "P_Vehicle",
+                    Size = 100,
+                    Value = P_Vehicle ?? Convert.DBNull,
+                    SqlDbType = System.Data.SqlDbType.VarChar,
+                },
+                new SqlParameter
+                {
+                    ParameterName = "P_DeliveryConfirmationImageUrl",
+                    Size = 200,
+                    Value = P_DeliveryConfirmationImageUrl ?? Convert.DBNull,
+                    SqlDbType = System.Data.SqlDbType.VarChar,
+                },
+                new SqlParameter
+                {
+                    ParameterName = "P_DeliveryConfirmationComments",
+                    Size = 1000,
+                    Value = P_DeliveryConfirmationComments ?? Convert.DBNull,
+                    SqlDbType = System.Data.SqlDbType.VarChar,
+                },
+                parameterreturnValue,
+            };
+            var _ = await _context.SqlQueryAsync<Glapp_SP_DrugsDeliveryConfirmationResult>("EXEC @returnValue = [dbo].[Glapp_SP_DrugsDeliveryConfirmation] @P_RestockID, @P_User, @P_Vehicle, @P_DeliveryConfirmationImageUrl, @P_DeliveryConfirmationComments", sqlParameters, cancellationToken);
+
+            returnValue?.SetValue(parameterreturnValue.Value);
+
+            return _;
+        }
+        */
 
         public Task<List<Glapp_SP_DrugsDeliveryRestockSaveResult2>> Glapp_SP_DrugsDeliveryRestockSaveAsync(long? P_RestockID, string P_User, string P_Vehicle, string P_DeliveryConfirmationImageUrl, string P_DeliveryConfirmationComments, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
         {
             throw new NotImplementedException();
         }
 
+        /*
         public Task<List<APP_SP_DrugsDeliveryConsumerViewSaveResult2>> APP_SP_DrugsDeliveryConsumerViewSaveResult2Async(long? P_RestockID, string P_User, string P_Vehicle, string P_DeliveryConfirmationImageUrl, string P_DeliveryConfirmationComments, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
+        {
+            throw new NotImplementedException();
+        }
+        */
+
+        public Task<List<APP_SP_DrugsDeliveryConsumerViewSaveResult2>> APP_SP_DrugsDeliveryConsumerViewSave2Async(long? P_RestockID, string P_User, string P_Vehicle, string P_DeliveryConfirmationImageUrl, string P_DeliveryConfirmationComments, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<List<Glapp_SP_DrugsDeliveryRestockSaveResult2>> Glapp_SP_DrugsDeliveryRestockSave2Async(long? P_RestockID, string P_User, string P_Vehicle, string P_DeliveryConfirmationImageUrl, string P_DeliveryConfirmationComments, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
+        {
+            throw new NotImplementedException();
+        }
+
+        Task<List<Glapp_SP_DrugsDeliveryConfirmationResult>> ISISMEDICAERPContextProcedures.Glapp_SP_DrugsDeliveryConfirmationAsync(long? P_RestockID, string P_User, string P_Vehicle, string P_DeliveryConfirmationImageUrl, string P_DeliveryConfirmationComments, OutputParameter<int> returnValue, CancellationToken cancellationToken)
         {
             throw new NotImplementedException();
         }

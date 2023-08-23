@@ -7,6 +7,7 @@ using System.Data;
 using System.Threading;
 using System.Threading.Tasks;
 
+
 namespace generalapi2.Models
 {
     public partial interface ISISMEDICAERPContextProcedures
@@ -21,7 +22,8 @@ namespace generalapi2.Models
 
         //TODO replace wrong Glapp_SP_DrugsDeliveryConfirmationAsync...
         //Task<List<APP_SP_DrugsDeliveryConsumerViewSaveResult2>> Glapp_SP_DrugsDeliveryConfirmationAsync(long? P_RestockID, string P_User, string P_Vehicle, string P_DeliveryConfirmationImageUrl, string P_DeliveryConfirmationComments, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
-        Task<List<APP_SP_DrugsDeliveryConsumerViewSaveResult2>> APP_SP_DrugsDeliveryConsumerViewSaveResult2Async(long? P_RestockID, string P_User, string P_Vehicle, string P_DeliveryConfirmationImageUrl, string P_DeliveryConfirmationComments, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
-        Task<List<Glapp_SP_DrugsDeliveryRestockSaveResult2>> Glapp_SP_DrugsDeliveryRestockSaveAsync(long? P_RestockID, string P_User, string P_Vehicle, string P_DeliveryConfirmationImageUrl, string P_DeliveryConfirmationComments, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
+        Task<List<APP_SP_DrugsDeliveryConsumerViewSaveResult2>> APP_SP_DrugsDeliveryConsumerViewSave2Async(long? P_RestockID, string P_User, string P_Vehicle, string P_DeliveryConfirmationImageUrl, string P_DeliveryConfirmationComments, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
+        Task<List<Glapp_SP_DrugsDeliveryRestockSaveResult2>> Glapp_SP_DrugsDeliveryRestockSave2Async(long? P_RestockID, string P_User, string P_Vehicle, string P_DeliveryConfirmationImageUrl, string P_DeliveryConfirmationComments, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
+        Task<List<Glapp_SP_DrugsDeliveryConfirmationResult>> Glapp_SP_DrugsDeliveryConfirmationAsync(long? P_RestockID, string P_User, string P_Vehicle, string P_DeliveryConfirmationImageUrl, string P_DeliveryConfirmationComments, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);        
     }
 }
