@@ -311,7 +311,7 @@ namespace generalapi2.Models
             return _;
         }
 
-
+        
         public virtual async Task<List<APP_SP_DrugsDeliveryConsumerViewSaveResult2>> Glapp_SP_DrugsDeliveryConfirmationAsync(long? P_RestockID, string P_User, string P_Vehicle, string P_DeliveryConfirmationImageUrl, string P_DeliveryConfirmationComments, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
         {
             var parameterreturnValue = new SqlParameter
@@ -359,14 +359,20 @@ namespace generalapi2.Models
                 },
                 parameterreturnValue,
             };
-            var _ = await _context.SqlQueryAsync<APP_SP_DrugsDeliveryConsumerViewSaveResult2>("EXEC @returnValue = [dbo].[Glapp_SP_DrugsDeliveryConfirmation] @P_RestockID, @P_User, @P_Vehicle, @P_DeliveryConfirmationImageUrl, @P_DeliveryConfirmationComments", sqlParameters, cancellationToken);
+            var _ = await _context.SqlQueryAsync<APP_SP_DrugsDeliveryConsumerViewSaveResult2>("EXEC @returnValue = [dbo].[APP_SP_DrugsDeliveryConsumerViewSave] @P_ConsumerUser, @P_Vehicle, @P_DrugsConsumptionDetail", sqlParameters, cancellationToken);
 
             returnValue?.SetValue(parameterreturnValue.Value);
 
             return _;
         }
+        
 
         public Task<List<Glapp_SP_DrugsDeliveryRestockSaveResult2>> Glapp_SP_DrugsDeliveryRestockSaveAsync(long? P_RestockID, string P_User, string P_Vehicle, string P_DeliveryConfirmationImageUrl, string P_DeliveryConfirmationComments, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<List<APP_SP_DrugsDeliveryConsumerViewSaveResult2>> APP_SP_DrugsDeliveryConsumerViewSaveResult2Async(long? P_RestockID, string P_User, string P_Vehicle, string P_DeliveryConfirmationImageUrl, string P_DeliveryConfirmationComments, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
         {
             throw new NotImplementedException();
         }
