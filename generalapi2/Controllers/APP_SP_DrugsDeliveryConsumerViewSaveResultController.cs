@@ -23,6 +23,7 @@ namespace generalapi2.Controllers
             _context = context;
         }
 
+        /*
         // GET: api/APP_SP_DrugsDeliveryConsumerViewSaveResult
         [HttpGet]
         public async Task<ActionResult<IEnumerable<APP_SP_DrugsDeliveryConsumerViewSaveResult>>> GetAPP_SP_DrugsDeliveryConsumerViewSaveResult()
@@ -82,6 +83,7 @@ namespace generalapi2.Controllers
 
             return NoContent();
         }
+        */
 
         /*
         // POST: api/APP_SP_DrugsDeliveryConsumerViewSaveResult
@@ -231,6 +233,9 @@ namespace generalapi2.Controllers
         }
         */
 
+
+
+        /*
         // DELETE: api/APP_SP_DrugsDeliveryConsumerViewSaveResult/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteAPP_SP_DrugsDeliveryConsumerViewSaveResult(string id)
@@ -250,6 +255,7 @@ namespace generalapi2.Controllers
 
             return NoContent();
         }
+        */
 
         private bool APP_SP_DrugsDeliveryConsumerViewSaveResultExists(string id)
         {
