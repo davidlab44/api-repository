@@ -29,7 +29,7 @@ namespace generalapi2.Controllers
                 return NotFound();
             }
             return _context.Glapp_SP_DrugsDeliveryRestocksResult
-                  .FromSqlRaw($"exec Glapp_SP_DrugsDeliveryRestocks 'admin',1,'TO_DELIVER'")
+                  .FromSqlRaw($"exec Glapp_SP_DrugsDeliveryRestocks 'admin',-1,'TO_DELIVER'")
                   .ToList();
         }
 

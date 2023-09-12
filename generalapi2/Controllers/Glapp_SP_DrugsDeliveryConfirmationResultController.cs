@@ -38,11 +38,7 @@ namespace generalapi2.Controllers
             return _context.Glapp_SP_DrugsDeliveryConfirmationResult
               .FromSqlRaw($" EXEC Glapp_SP_DrugsDeliveryConfirmation 1,'ADMIN', 'HFQ753', 'someUrl','someComments'").ToList();
 
-
         }
-
-
-
 
         /*
         // GET: api/Glapp_SP_DrugsDeliveryConfirmationResult
