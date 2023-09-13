@@ -449,6 +449,11 @@ namespace generalapi2.Models
             throw new NotImplementedException();
         }
 
+        public Task<List<GLAPP_SP_USR_OBTENERResult>> GLAPP_SP_USR_OBTENERResultAsync(string P_User, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
+        {
+            throw new NotImplementedException();
+        }
+
         /*
         public Task<List<APP_SP_DrugsDeliveryConsumerViewArticlesResult>> APP_SP_DrugsDeliveryConsumerViewArticlesAsync(string P_User, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
         {
